@@ -1,8 +1,8 @@
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 import Introductions from "../components/Introductions";
 import Reason from "../components/Reason";
-import Gallary from "../components/Gallary";
-import Counselling from "../components/Counselling";
+import Gallary from "../components/Gallary/Gallary";
+import Counselling from "../components/Counselling/Counselling";
 function Home() {
     return (
         <div>

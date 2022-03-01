@@ -57,6 +57,7 @@ function Footer() {
                     sx={{ padding: "1.2vw" }}
                 >
                     <img
+                        loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
                         style={{ width: "10vw" }}
                     ></img>

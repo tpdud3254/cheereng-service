@@ -1,6 +1,6 @@
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-import "../css/style.css";
+import "../../css/style.css";
 
 function Banner() {
     return (

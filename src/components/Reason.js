@@ -10,7 +10,10 @@ function Reason() {
                 padding: 10,
             }}
         >
-            <img src="/assets/images/main/reason/reason.png"></img>
+            <img
+                loading="lazy"
+                src="/assets/images/main/reason/reason.png"
+            ></img>
         </Box>
     );
 }

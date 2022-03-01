@@ -7,8 +7,8 @@ import Home from "./routes/Home";
 import Participation from "./routes/sub/Participation";
 import Review from "./routes/sub/Review";
 import WhyCheerEng from "./routes/sub/WhyCheerEng";
-import Header from "./components/Header";
-import Footer from "./components/Footter";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footter/Footter";
 
 function App() {
     return (

@@ -6,7 +6,7 @@ import {
     ImageList,
     ImageListItem,
 } from "@mui/material";
-import { activitiesInfo } from "../components/activitiesInfo";
+import { activitiesInfo } from "./activitiesInfo";
 
 function Activity({ obj, index }) {
     console.log(obj);

@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Link, useLocation } from "react-router-dom";

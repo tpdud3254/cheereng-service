@@ -1,5 +1,5 @@
 import { Box, ImageList, ImageListItem } from "@mui/material";
-import Title from "./Title";
+import Title from "../Title";
 
 function Gallary() {
     const itemData = [
@@ -66,7 +66,11 @@ function Gallary() {
                 <ImageList variant="masonry" cols={3} gap={13}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
-                            <img src={item.img} alt={item.title} />
+                            <img
+                                loading="lazy"
+                                src={item.img}
+                                alt={item.title}
+                            />
                         </ImageListItem>
                     ))}
                 </ImageList>
