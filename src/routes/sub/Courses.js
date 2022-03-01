@@ -1,5 +1,5 @@
-import Course from "../components/Course";
-import { courseInfo } from "../components/courseInfo";
+import Course from "../../components/Course";
+import { courseInfo } from "../../components/courseInfo";
 function Courses() {
     return (
         <>

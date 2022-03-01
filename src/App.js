@@ -1,18 +1,18 @@
 import { Routes } from "react-router";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Activities from "./routes/Activities";
-import Courses from "./routes/Courses";
-import Faqs from "./routes/Faqs";
+import Activities from "./routes/sub/Activities";
+import Courses from "./routes/sub/Courses";
+import Faqs from "./routes/sub/Faqs";
 import Home from "./routes/Home";
-import Participation from "./routes/Participation";
-import Review from "./routes/Review";
-import WhyCheerEng from "./routes/WhyCheerEng";
+import Participation from "./routes/sub/Participation";
+import Review from "./routes/sub/Review";
+import WhyCheerEng from "./routes/sub/WhyCheerEng";
 import Header from "./components/Header";
 import Footer from "./components/Footter";
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Router>
                 <Header />
                 <Routes>
