@@ -1,0 +1,18 @@
+import { Box } from "@mui/material";
+function Reason() {
+    return (
+        <Box
+            sx={{
+                textAlign: "center",
+                backgroundColor: "#000000",
+                backgroundImage: `url(${"/assets/images/reason_bg.png"})`,
+                backgroundSize: "contain",
+                padding: 10,
+            }}
+        >
+            <img src="/assets/images/reason.png"></img>
+        </Box>
+    );
+}
+
+export default Reason;
