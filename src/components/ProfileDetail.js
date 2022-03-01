@@ -43,7 +43,7 @@ function ProfileDetail({ selected }) {
                         </Typography>
                         <img
                             style={{ width: 25, paddingBottom: 4 }}
-                            src="/assets/images/kakao.png"
+                            src="/assets/images/common/kakao.png"
                         ></img>
                     </Stack>
 
@@ -77,7 +77,7 @@ function ProfileDetail({ selected }) {
                     >
                         {arr.map((item, index) => (
                             <img
-                                src={`/assets/images/profiles/sub/${
+                                src={`/assets/images/main/profiles/sub/${
                                     profile.name
                                 }${index + 1}.png`}
                                 style={{ width: "20%" }}

@@ -4,39 +4,39 @@ import Title from "./Title";
 function Gallary() {
     const itemData = [
         {
-            img: "/assets/images/gallary/6.jpg",
+            img: "/assets/images/main/gallary/6.jpg",
             title: "6",
         },
         {
-            img: "/assets/images/gallary/7.jpg",
+            img: "/assets/images/main/gallary/7.jpg",
             title: "7",
         },
         {
-            img: "/assets/images/gallary/2.jpg",
+            img: "/assets/images/main/gallary/2.jpg",
             title: "2",
         },
         {
-            img: "/assets/images/gallary/4.jpg",
+            img: "/assets/images/main/gallary/4.jpg",
             title: "4",
         },
         {
-            img: "/assets/images/gallary/1.jpg",
+            img: "/assets/images/main/gallary/1.jpg",
             title: "1",
         },
         {
-            img: "/assets/images/gallary/9.jpg",
+            img: "/assets/images/main/gallary/9.jpg",
             title: "9",
         },
         {
-            img: "/assets/images/gallary/5.jpg",
+            img: "/assets/images/main/gallary/5.jpg",
             title: "5",
         },
         {
-            img: "/assets/images/gallary/8.jpg",
+            img: "/assets/images/main/gallary/8.jpg",
             title: "8",
         },
         {
-            img: "/assets/images/gallary/3.jpg",
+            img: "/assets/images/main/gallary/3.jpg",
             title: "3",
         },
     ];
@@ -46,7 +46,7 @@ function Gallary() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#ebe7e4",
-                backgroundImage: `url(${"/assets/images/gallary_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/main/gallary/gallary_bg.png"})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 padding: 10,

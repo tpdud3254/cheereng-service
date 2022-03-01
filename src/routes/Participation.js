@@ -24,14 +24,14 @@ function Participation() {
         <Box
             sx={{
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/header_bg3.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 padding: 10,
                 textAlign: "left",
             }}
         >
             <Box
                 sx={{
-                    backgroundImage: `url(${"/assets/images/partification.png"})`,
+                    backgroundImage: `url(${"/assets/images/sub/partification/partification.png"})`,
                     padding: 5,
                     marginLeft: 10,
                     marginRight: 10,

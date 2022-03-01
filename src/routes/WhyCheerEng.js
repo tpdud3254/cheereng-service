@@ -4,7 +4,7 @@ function WhyCheerEng() {
     const Img = () => {
         return (
             <img
-                src="/assets/images/whycheereng.png"
+                src="/assets/images/main/whycheereng/whycheereng.png"
                 style={{
                     maxHeight: "800px",
                     maxWidth: "600px",
@@ -84,7 +84,7 @@ function WhyCheerEng() {
                     }}
                 >
                     <img
-                        src="/assets/images/whycheereng_detail.png"
+                        src="/assets/images/main/whycheereng/whycheereng_detail.png"
                         style={{ width: "100%" }}
                     ></img>
                 </Box>
@@ -96,13 +96,13 @@ function WhyCheerEng() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/header_bg3.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 padding: 5,
                 paddingLeft: 30,
                 paddingRight: 30,
             }}
         >
-            <img src="/assets/images/whycheerengTitle.png"></img>
+            <img src="/assets/images/main/whycheereng/whycheerengTitle.png"></img>
             <Divider
                 variant="middle"
                 sx={{

@@ -11,7 +11,7 @@ function Profile({ profile, onClick, opacity, selected }) {
         <Box sx={{ opacity: selected === name ? 1 : opacity }}>
             <Avatar
                 alt={name}
-                src={`/assets/images/profiles/main/${name}.png`}
+                src={`/assets/images/main/profiles/main/${name}.png`}
                 sx={{
                     width: { xs: 250, sm: 250, md: 150, lg: 250 },
                     height: { xs: 250, sm: 250, md: 150, lg: 250 },

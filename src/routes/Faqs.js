@@ -79,12 +79,15 @@ function Faqs() {
         <Box
             sx={{
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/header_bg3.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 paddingTop: 6,
                 paddingBottom: 6,
             }}
         >
-            <img src="/assets/images/faq_title.png" style={{ width: "15%" }} />
+            <img
+                src="/assets/images/sub/faq_title.png"
+                style={{ width: "15%" }}
+            />
 
             <Box sx={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}>
                 {question.map((item, index) => (

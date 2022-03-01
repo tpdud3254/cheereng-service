@@ -60,7 +60,7 @@ function Course({ courseObj }) {
                                 </Typography>
                                 <div>
                                     {courseObj.badge ? (
-                                        <img src="/assets/images/course/primeum_badge.png"></img>
+                                        <img src="/assets/images/sub/course/primeum_badge.png"></img>
                                     ) : null}
                                 </div>
                             </Stack>
@@ -83,13 +83,13 @@ function Course({ courseObj }) {
                     <Grid item xs={6} sx={{ textAlign: "right" }}>
                         <img
                             style={{ height: "100%", maxHeight: "200px" }}
-                            src={`/assets/images/course/${courseObj.id}.png`}
+                            src={`/assets/images/sub/course/${courseObj.id}.png`}
                         ></img>
                     </Grid>
                     <Grid item xs={12}>
                         <img
                             style={{ width: "100%" }}
-                            src={`/assets/images/course/${courseObj.id}_schedule.png`}
+                            src={`/assets/images/sub/course/${courseObj.id}_schedule.png`}
                         ></img>
                     </Grid>
                 </Grid>

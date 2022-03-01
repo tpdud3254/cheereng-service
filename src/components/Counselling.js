@@ -31,7 +31,7 @@ function Counselling() {
                 sx={{
                     textAlign: "center",
                     backgroundColor: "#ffffff",
-                    backgroundImage: `url(${"/assets/images/counselling.png"})`,
+                    backgroundImage: `url(${"/assets/images/main/counselling/counselling.png"})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     padding: 10,
@@ -153,7 +153,10 @@ function Counselling() {
                     <div>치어들이 친절하게 안내 드리겠습니다.</div>
                 </Typography>
 
-                <img style={{ margin: 6 }} src="/assets/images/arrow.png"></img>
+                <img
+                    style={{ margin: 6 }}
+                    src="/assets/images/common/arrow.png"
+                ></img>
 
                 <div>
                     <Item>카톡상담 바로가기</Item>

@@ -17,11 +17,11 @@ function Header() {
                         sx={{
                             textAlign: "center",
                             height: 200,
-                            backgroundImage: `url(${"/assets/images/header_bg3.png"})`,
+                            backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                         }}
                     >
                         <Link to={`/`}>
-                            <img src="/assets/images/logo4.png"></img>
+                            <img src="/assets/images/common/logo/logo.png"></img>
                         </Link>
                     </Box>
                     <NavBar />

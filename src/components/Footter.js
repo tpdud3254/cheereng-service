@@ -39,7 +39,7 @@ function Footer() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/header_bg3.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 padding: "2vw",
             }}
         >
@@ -57,7 +57,7 @@ function Footer() {
                     sx={{ padding: "1.2vw" }}
                 >
                     <img
-                        src="/assets/images/logo_small.png"
+                        src="/assets/images/common/logo/logo_small.png"
                         style={{ width: "10vw" }}
                     ></img>
 

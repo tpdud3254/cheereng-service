@@ -20,7 +20,7 @@ function NavBar() {
             sx={{
                 textAlign: "center",
                 height: 55,
-                backgroundImage: `url(${"/assets/images/navbar_bg2.png"})`,
+                backgroundImage: `url(${"/assets/images/common/navbar_bg.png"})`,
                 borderBottom: "2px solid #ffffff33",
             }}
         >

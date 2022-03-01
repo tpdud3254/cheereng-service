@@ -16,7 +16,7 @@ const Item = styled(Button)({
     fontFamily: "LeferiPoint-WhiteA",
     opacity: 0.8,
     "&:hover": {
-        backgroundImage: `url(${"/assets/images/navbar_highlight.png"})`,
+        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
         boxShadow: "none",
         color: "#31271c",
         opacity: 0.7,
@@ -25,7 +25,7 @@ const Item = styled(Button)({
         boxShadow: "none",
         backgroundColor: "#fff37955",
         color: "#31271c",
-        backgroundImage: `url(${"/assets/images/navbar_highlight.png"})`,
+        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
         opacity: 1,
     },
 });
@@ -33,7 +33,7 @@ const Item = styled(Button)({
 const useStyles = makeStyles(() => ({
     selected: {
         color: "#31271c",
-        backgroundImage: `url(${"/assets/images/navbar_highlight.png"})`,
+        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
         opacity: 1,
     },
 }));

@@ -5,35 +5,35 @@ import ImageListItem from "@mui/material/ImageListItem";
 function Review() {
     const itemData = [
         {
-            img: "/assets/images/review/img6.jpg",
+            img: "/assets/images/sub/review/img6.jpg",
             title: "img6",
         },
         {
-            img: "/assets/images/review/img7.jpg",
+            img: "/assets/images/sub/review/img7.jpg",
             title: "img7",
         },
         {
-            img: "/assets/images/review/img8.jpg",
+            img: "/assets/images/sub/review/img8.jpg",
             title: "img8",
         },
         {
-            img: "/assets/images/review/img1.jpg",
+            img: "/assets/images/sub/review/img1.jpg",
             title: "img1",
         },
         {
-            img: "/assets/images/review/img2.jpg",
+            img: "/assets/images/sub/review/img2.jpg",
             title: "img2",
         },
         {
-            img: "/assets/images/review/img3.jpg",
+            img: "/assets/images/sub/review/img3.jpg",
             title: "img3",
         },
         {
-            img: "/assets/images/review/img4.jpg",
+            img: "/assets/images/sub/review/img4.jpg",
             title: "img4",
         },
         {
-            img: "/assets/images/review/img5.jpg",
+            img: "/assets/images/sub/review/img5.jpg",
             title: "img5",
         },
     ];
@@ -42,7 +42,7 @@ function Review() {
         <Box
             sx={{
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/review_bg.jpg"})`,
+                backgroundImage: `url(${"/assets/images/sub/review/review_bg.jpg"})`,
                 padding: 10,
                 textAlign: "center",
             }}
