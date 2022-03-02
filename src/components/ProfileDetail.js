@@ -13,21 +13,19 @@ function ProfileDetail({ selected }) {
             sx={{
                 textAlign: "left",
                 backgroundColor: "#000000",
-                paddingBottom: 5,
+                paddingBottom: "2wv",
             }}
         >
             <Box
                 sx={{
                     backgroundColor: "#222222",
-                    marginLeft: 20,
-                    marginRight: 20,
-                    paddingLeft: 5,
-                    paddingRight: 5,
-                    paddingTop: 3,
-                    paddingBottom: 5,
+                    marginLeft: "11vw",
+                    marginRight: "11vw",
+                    padding: "3vw",
+                    paddingTop: "2vw",
                 }}
             >
-                <Stack spacing={2}>
+                <Stack spacing={"1.5vw"}>
                     <Stack direction="row" alignItems="center">
                         <Typography
                             variant="h5"
@@ -35,6 +33,7 @@ function ProfileDetail({ selected }) {
                             sx={{
                                 color: "#ffffff",
                                 fontFamily: "SEBANG_Gothic_Bold",
+                                fontSize: "1.5vw",
                             }}
                         >
                             <span style={{ color: "#00ffd8" }}>|</span>&nbsp;
@@ -42,7 +41,7 @@ function ProfileDetail({ selected }) {
                             {profile.mbti} &nbsp;/&nbsp;&nbsp;
                         </Typography>
                         <img
-                            style={{ width: 25, paddingBottom: 4 }}
+                            style={{ width: "2.2vw", paddingBottom: "0.5vw" }}
                             src="/assets/images/common/kakao.png"
                         ></img>
                     </Stack>
@@ -53,6 +52,7 @@ function ProfileDetail({ selected }) {
                         sx={{
                             color: "#ffffff",
                             fontFamily: "NanumSquare",
+                            fontSize: "1vw",
                         }}
                     >
                         {profile.greeting.split("\n").map((line, i) => {
@@ -67,11 +67,7 @@ function ProfileDetail({ selected }) {
 
                     <Stack
                         direction="row"
-                        spacing={{
-                            md: 5,
-                            lg: 10,
-                            xl: 10,
-                        }}
+                        spacing={"4vw"}
                         justifyContent="center"
                         alignItems="center"
                     >

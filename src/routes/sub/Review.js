@@ -43,7 +43,8 @@ function Review() {
             sx={{
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/sub/review/review_bg.jpg"})`,
-                padding: 10,
+                backgroundSize: "contain",
+                padding: "5vw",
                 textAlign: "center",
             }}
         >
@@ -53,9 +54,9 @@ function Review() {
                     textAlign: "center",
                     fontSize: "1.2vw",
                     display: "inline",
-                    padding: 0.5,
-                    paddingLeft: 6,
-                    paddingRight: 6,
+                    padding: "0.2vw",
+                    paddingLeft: "2.5vw",
+                    paddingRight: "2.5vw",
                     borderRadius: 10,
                     color: "#bd5757",
                     fontFamily: "nanumgothic",
@@ -80,7 +81,7 @@ function Review() {
                 sx={{
                     textAlign: "center",
                     backgroundColor: "#ffffff99",
-                    padding: 4,
+                    padding: "1.8vw",
                 }}
             >
                 <ImageList variant="masonry" cols={3} gap={10}>

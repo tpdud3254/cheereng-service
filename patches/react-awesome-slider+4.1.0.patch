@@ -1,37 +1,8 @@
 diff --git a/node_modules/react-awesome-slider/dist/styles.css b/node_modules/react-awesome-slider/dist/styles.css
-index 15ffd56..0f71521 100644
+index 15ffd56..8a1e3f2 100644
 --- a/node_modules/react-awesome-slider/dist/styles.css
 +++ b/node_modules/react-awesome-slider/dist/styles.css
-@@ -12,20 +12,20 @@
-   outline-width: 0; }
- 
- .awssld {
--  --organic-arrow-thickness: 4px;
--  --organic-arrow-height: 40px;
--  --slider-height-percentage: 60%;
--  --loader-bar-color: #851515;
--  --loader-bar-height: 6px;
-+  --slider-height-percentage: 38%;
-+  --slider-transition-duration: 339ms;
-+  --organic-arrow-thickness: 6px;
-+  --organic-arrow-border-radius: 9;
-+  --organic-arrow-height: 25px;
-+  --organic-arrow-color: #d5d5d5;
-+  --loader-bar-color: transparent;
-+  --loader-bar-height: 1px;
-   --control-button-width: 10%;
-   --control-button-height: 25%;
-   --control-button-opacity: 0.5;
-   --control-button-hover-opacity: 0.75;
-   --control-button-background: transparent;
-   --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
--  --slider-transition-duration: 575ms;
--  --organic-arrow-color: #6a6a6a;
--  --organic-arrow-border-radius: 0;
-   --control-bullet-color: #6a6a6a;
-   --control-bullet-active-color: #6a6a6a;
-   --content-background-color: #2f2f2f; }
-@@ -84,9 +84,9 @@
+@@ -84,11 +84,19 @@
      .awssld__content > video {
        -o-object-fit: cover;
           object-fit: cover;
@@ -42,46 +13,14 @@ index 15ffd56..0f71521 100644
 +      /* position: absolute; */
        top: 0;
        left: 0; }
-   .awssld__controls button {
-@@ -365,6 +365,8 @@
-     .awssld__timer--hidden {
-       display: none; }
- 
-+      
 +
- @-webkit-keyframes slideFromLeft {
-   from {
-     -webkit-transform: translate3d(-100%, 0, 0);
-diff --git a/node_modules/react-awesome-slider/src/core/constants.scss b/node_modules/react-awesome-slider/src/core/constants.scss
-index df74104..006d4f0 100644
---- a/node_modules/react-awesome-slider/src/core/constants.scss
-+++ b/node_modules/react-awesome-slider/src/core/constants.scss
-@@ -1,20 +1,20 @@
- $root-element: 'awssld';
- $cos45: 0.7071;
- $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
--$slider-height-percentage: 60%;
--$slider-transition-duration: 575ms;
-+$slider-height-percentage: 38%;
-+$slider-transition-duration: 339ms;
- 
--$organic-arrow-color: #6a6a6a;
--$organic-arrow-thickness: 4px;
--$organic-arrow-height: 40px;
--$organic-arrow-border-radius: 0;
-+$organic-arrow-color: #d5d5d5;
-+$organic-arrow-thickness: 6px;
-+$organic-arrow-height: 25px;
-+$organic-arrow-border-radius: 9;
- $control-button-width: 10%;
- $control-button-height: 25%;
- $control-button-opacity: 0.5;
- $control-button-hover-opacity: 0.75;
- $control-button-background: transparent;
--$loader-bar-color: #851515;
--$loader-bar-height: 6px;
-+$loader-bar-color: transparent;
-+$loader-bar-height: 1px;
- $control-bullet-color: #6a6a6a;
- $control-bullet-active-color: #6a6a6a;
- $content-background-color: #2f2f2f;
++      @media screen and (max-width: 900px) {
++                .awssld__content > img,
++            .awssld__content > video {
++                    width: 100%;
++              height: unset;
++            }
++            }
+   .awssld__controls button {
+     display: -webkit-box;
+     display: -ms-flexbox;

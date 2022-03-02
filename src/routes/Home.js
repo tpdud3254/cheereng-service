@@ -1,11 +1,11 @@
-import Banner from "../components/Banner/Banner";
-import Introductions from "../components/Introductions";
 import Reason from "../components/Reason";
+import Banner from "../components/Banner/Banner";
 import Gallary from "../components/Gallary/Gallary";
+import Introductions from "../components/Introductions";
 import Counselling from "../components/Counselling/Counselling";
 function Home() {
     return (
-        <div>
+        <div style={{ width: "100vw" }}>
             <Banner />
             <Introductions />
             <Reason />

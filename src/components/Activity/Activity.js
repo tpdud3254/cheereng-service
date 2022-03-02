@@ -12,22 +12,22 @@ function Activity({ obj, index }) {
     console.log(obj);
     return (
         <Stack
-            spacing={4}
+            spacing={"2.3vw"}
             justifyContent="center"
             alignItems="center"
             sx={{
-                padding: 10,
+                padding: "5vw",
                 backgroundColor: index % 2 === 0 ? "#ffffff" : "#f1f1f1",
             }}
         >
+            <a name={obj.title}></a>
             <Typography
                 variant="h3"
                 component="div"
                 sx={{
                     color: "#000000",
                     fontFamily: "SEBANG_Gothic_Bold",
-                    fontSize: 30,
-                    lineHeight: 1.5,
+                    fontSize: "2.3vw",
                 }}
             >
                 {obj.title}
@@ -36,11 +36,11 @@ function Activity({ obj, index }) {
             <ImageList
                 sx={{
                     backgroundColor: index % 2 === 0 ? "#f1f1f1" : "#ffffff",
-                    padding: 2,
+                    padding: "1vw",
                 }}
                 variant="woven"
                 cols={3}
-                gap={8}
+                gap={"1vw"}
             >
                 {activitiesInfo[index].url.map((item, index) => (
                     <ImageListItem key={item}>
@@ -55,9 +55,8 @@ function Activity({ obj, index }) {
                 sx={{
                     color: "#000000",
                     fontFamily: "NEXON Lv2 Gothic Light",
-                    fontSize: 25,
+                    fontSize: "1.7vw",
                     fontWeight: "bold",
-                    lineHeight: 1.5,
                 }}
             >
                 {obj.explain}

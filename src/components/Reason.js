@@ -7,12 +7,13 @@ function Reason() {
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/main/reason/reason_bg.png"})`,
                 backgroundSize: "contain",
-                padding: 10,
+                width: "100vw",
             }}
         >
             <img
                 loading="lazy"
                 src="/assets/images/main/reason/reason.png"
+                style={{ width: "90%", margin: "6vw" }}
             ></img>
         </Box>
     );

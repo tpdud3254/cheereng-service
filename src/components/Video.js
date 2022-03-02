@@ -17,7 +17,7 @@ function Video() {
                 alignItems="center"
                 sx={{
                     backgroundColor: "#000000",
-                    backgroundImage: `url(${"/assets/images/main/gallary/gallary_bg.png"})`,
+                    backgroundImage: `url(${"/assets/images/common/paper_bg.jpg"})`,
                     backgroundSize: "cover",
                 }}
             >

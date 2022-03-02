@@ -17,8 +17,8 @@ import Activity from "../../components/Activity/Activity";
 const Item = styled(Button)({
     boxShadow: "none",
     textTransform: "none",
-    fontSize: 19,
-    height: "35px",
+    fontSize: "1.3vw",
+    height: "2.8vw",
     textAlign: "center",
     backgroundColor: "#dcbf8b",
     color: "#fdfbf8",
@@ -36,17 +36,22 @@ function Activities() {
         <>
             <Video />
 
-            <Box sx={{ paddingTop: 5, paddingBottom: 5 }}>
+            <Box sx={{ paddingTop: "3vw", paddingBottom: "3vw" }}>
                 <Box sx={{ backgroundColor: "#f1f1f1" }}>
                     <Stack
-                        spacing={10}
+                        spacing={"3vw"}
                         direction="row"
                         justifyContent="center"
                         alignItems="center"
-                        sx={{ height: 55 }}
+                        sx={{ height: "4.3vw" }}
                     >
                         {activitiesInfo.map((item) => (
-                            <Item key={item.title}>{item.title}</Item>
+                            <a
+                                href={`#${item.title}`}
+                                style={{ textDecoration: "none" }}
+                            >
+                                <Item key={item.title}>{item.title}</Item>
+                            </a>
                         ))}
                     </Stack>
                 </Box>

@@ -1,5 +1,8 @@
 import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 function WhyCheerEng() {
     const Img = () => {
         return (
@@ -8,7 +11,7 @@ function WhyCheerEng() {
                 style={{
                     maxHeight: "800px",
                     maxWidth: "600px",
-                    width: "100%",
+                    width: matches ? "30vw" : "60vw",
                 }}
             ></img>
         );
@@ -17,10 +20,10 @@ function WhyCheerEng() {
     const Text = () => {
         return (
             <Stack
-                spacing={3}
+                spacing={"2.2vw"}
                 justifyContent="center"
                 alignItems="center"
-                padding={2}
+                padding={"1.1vw"}
             >
                 <Typography
                     variant="subtitle1"
@@ -28,7 +31,7 @@ function WhyCheerEng() {
                     sx={{
                         color: "#ffffff",
                         fontFamily: "InkLipquid",
-                        fontSize: 30,
+                        fontSize: "2.5vw",
                         lineHeight: 1.5,
                     }}
                 >
@@ -48,7 +51,7 @@ function WhyCheerEng() {
                     sx={{
                         color: "#bcbcbc",
                         fontFamily: "NanumSquare",
-                        fontSize: 20,
+                        fontSize: "1.5vw",
                     }}
                 >
                     <div>혼자서 공부하는 딱딱하고 지루한 영어는 그만!</div>
@@ -68,7 +71,7 @@ function WhyCheerEng() {
                         sx={{
                             color: "#000000",
                             fontFamily: "LeferiPoint-SpecialItalicA",
-                            fontSize: 18,
+                            fontSize: "1.4vw",
                             lineHeight: 1.5,
                         }}
                     >
@@ -79,49 +82,56 @@ function WhyCheerEng() {
                 </Box>
                 <Box
                     sx={{
-                        paddingLeft: 5,
-                        paddingRight: 5,
+                        paddingLeft: "3.5vw",
+                        paddingRight: "3.5vw",
                     }}
                 >
                     <img
                         src="/assets/images/main/whycheereng/whycheereng_detail.png"
-                        style={{ width: "100%" }}
+                        style={{ width: "25vw" }}
                     ></img>
                 </Box>
             </Stack>
         );
     };
+
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     return (
         <Box
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                padding: 5,
-                paddingLeft: 30,
-                paddingRight: 30,
+                padding: "3.5vw",
+                width: "95vw",
             }}
         >
-            <img src="/assets/images/main/whycheereng/whycheerengTitle.png"></img>
+            <img
+                style={{ width: "30vw" }}
+                src="/assets/images/main/whycheereng/whycheerengTitle.png"
+            ></img>
             <Divider
                 variant="middle"
                 sx={{
                     borderColor: "#ffffff55",
-                    margin: 3,
-                    marginLeft: 10,
-                    marginRight: 10,
+                    margin: "2vw",
+                    marginLeft: "6vw",
+                    marginRight: "6vw",
                     borderBottomWidth: "medium",
                 }}
             />
 
-            <Grid container spacing={5}>
-                <Grid item xs={6}>
-                    <Img />
-                </Grid>
-                <Grid item xs={6}>
-                    <Text />
-                </Grid>
-            </Grid>
+            <Stack
+                spacing={"2vw"}
+                direction={matches ? "row" : "column"}
+                justifyContent="center"
+                alignItems="center"
+                width="100vw"
+            >
+                <Img />
+                <Text />
+            </Stack>
         </Box>
     );
 }

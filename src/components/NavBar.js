@@ -1,32 +1,21 @@
-import { Box, Stack } from "@mui/material";
-import { useState } from "react";
 import NavItem from "./NavItem";
+import { Box, Stack } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
-function NavBar() {
-    const items = [
-        "치잉이란?",
-        "치잉코스",
-        "테마활동",
-        "참가하기",
-        "활동리뷰",
-        "FAQ",
-    ];
-
+function NavBar({ items }) {
     const location = useLocation().pathname;
 
     return (
         <Box
             sx={{
                 textAlign: "center",
-                height: 55,
                 backgroundImage: `url(${"/assets/images/common/navbar_bg.png"})`,
                 borderBottom: "2px solid #ffffff33",
+                width: "100vw",
             }}
         >
             <Box
                 sx={{
-                    height: 55,
                     backgroundColor: "#00000044",
                 }}
             >

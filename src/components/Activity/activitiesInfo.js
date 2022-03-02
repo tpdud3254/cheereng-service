@@ -31,9 +31,9 @@ export const activitiesInfo = [
         title: "Chatting",
         explain: "그룹수업 전 채팅을 통한 예습 공부(부담감 제로!)",
         url: [
-            "/assets/images/sub/activity/party/party1.jpg",
-            "/assets/images/sub/activity/party/party2.jpg",
-            "/assets/images/sub/activity/party/party3.jpg",
+            "/assets/images/sub/activity/chatting/chatting1.png",
+            "/assets/images/sub/activity/chatting/chatting2.png",
+            "/assets/images/sub/activity/chatting/chatting3.png",
         ],
     },
     {

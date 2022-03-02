@@ -1,5 +1,10 @@
 import { Box, Stack, Typography, Grid } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 function Footer() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     const info = [
         ["대표자", "조미선"],
         ["주소", "서울 금천구 서부샛길 528, 327호"],
@@ -12,9 +17,9 @@ function Footer() {
                     variant="body2"
                     component="div"
                     sx={{
-                        color: "#fff379",
+                        color: "#ffd179",
                         fontFamily: "NanumSquareRound",
-                        fontSize: "1.2vw",
+                        fontSize: "0.8vw",
                     }}
                 >
                     {text[0]}
@@ -26,7 +31,7 @@ function Footer() {
                     sx={{
                         color: "#ffffff",
                         fontFamily: "NanumSquareRound",
-                        fontSize: "1.2vw",
+                        fontSize: "0.8vw",
                     }}
                 >
                     {text[1]}
@@ -40,15 +45,10 @@ function Footer() {
                 textAlign: "center",
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                padding: "2vw",
+                width: "100vw",
             }}
         >
-            <Box
-                sx={{
-                    textAlign: "center",
-                    backgroundColor: "#aaaaaa22",
-                }}
-            >
+            {matches ? (
                 <Stack
                     spacing={"3vw"}
                     direction="row"
@@ -59,7 +59,7 @@ function Footer() {
                     <img
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
-                        style={{ width: "10vw" }}
+                        style={{ width: "7vw" }}
                     ></img>
 
                     <Stack>
@@ -80,8 +80,9 @@ function Footer() {
                             sx={{
                                 color: "#eeeeee",
                                 fontFamily: "Nanum Gothic",
-                                fontSize: "1vw",
+                                fontSize: "0.6vw",
                                 textAlign: "right",
+                                opacity: 0.7,
                             }}
                         >
                             Copyright ⓒ 2022. cheerEnglish. ALL RIGHTS RESERVED.
@@ -91,9 +92,9 @@ function Footer() {
                             variant="body2"
                             component="div"
                             sx={{
-                                color: "#c30000",
-                                fontFamily: "NanumSquareRound",
-                                fontSize: "1.2vw",
+                                color: "#c30000aa",
+                                fontFamily: "Nanum Gothic",
+                                fontSize: "0.8vw",
                                 textAlign: "right",
                             }}
                         >
@@ -101,7 +102,49 @@ function Footer() {
                         </Typography>
                     </Stack>
                 </Stack>
-            </Box>
+            ) : (
+                <Stack
+                    justifyContent="center"
+                    alignItems="center"
+                    sx={{ padding: "1.2vw" }}
+                >
+                    <img
+                        loading="lazy"
+                        src="/assets/images/common/logo/logo_small.png"
+                        style={{ width: "7vw" }}
+                    ></img>
+                    {info.map((item, index) => (
+                        <Item key={index} text={item} />
+                    ))}
+
+                    <Typography
+                        variant="body2"
+                        component="div"
+                        sx={{
+                            color: "#eeeeee",
+                            fontFamily: "Nanum Gothic",
+                            fontSize: "0.6vw",
+                            textAlign: "right",
+                            opacity: 0.7,
+                        }}
+                    >
+                        Copyright ⓒ 2022. cheerEnglish. ALL RIGHTS RESERVED.
+                    </Typography>
+
+                    <Typography
+                        variant="body2"
+                        component="div"
+                        sx={{
+                            color: "#c30000aa",
+                            fontFamily: "Nanum Gothic",
+                            fontSize: "0.8vw",
+                            textAlign: "right",
+                        }}
+                    >
+                        credits &gt;
+                    </Typography>
+                </Stack>
+            )}
         </Box>
     );
 }

@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Avatar } from "@mui/material";
 import Profile from "./Profile";
 import Title from "./Title";
 import React, { useEffect, useRef, useState } from "react";
@@ -38,8 +38,8 @@ function Introductions() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                paddingTop: 8,
-                paddingBottom: 8,
+                paddingTop: "5vw",
+                paddingBottom: "5vw",
             }}
         >
             <Title text="CHEER 소개" />
@@ -48,9 +48,9 @@ function Introductions() {
                 modules={[Navigation]}
                 className="mySwiper"
                 style={{
-                    marginLeft: 100,
-                    marginRight: 100,
-                    marginBottom: 50,
+                    marginLeft: "5vw",
+                    marginRight: "5vw",
+                    marginBottom: "2vw",
                 }}
             >
                 {matches
@@ -58,11 +58,7 @@ function Introductions() {
                           <SwiperSlide key={index}>
                               <Stack
                                   direction="row"
-                                  spacing={{
-                                      md: 5,
-                                      lg: 10,
-                                      xl: 15,
-                                  }}
+                                  spacing={"8vw"}
                                   justifyContent="center"
                                   alignItems="center"
                               >
@@ -80,7 +76,26 @@ function Introductions() {
                       ))
                     : mobileProfileInfo.map((profile, index) => (
                           <SwiperSlide key={index}>
-                              <Profile profile={profile} onClick={onClick} />
+                              <Box>
+                                  <img
+                                      src={`/assets/images/main/profiles/main/${profile.name}.png`}
+                                      alt={profile.name}
+                                      style={{
+                                          width: "50vw",
+                                          marginBottom: "4vw",
+                                          borderRadius: 100,
+                                      }}
+                                      onClick={onClick}
+                                  ></img>
+                                  <div
+                                      style={{
+                                          color: "#ffffff",
+                                          fontFamily: "NanumSquareRound",
+                                      }}
+                                  >
+                                      {profile.summary}
+                                  </div>
+                              </Box>
                           </SwiperSlide>
                       ))}
             </Swiper>

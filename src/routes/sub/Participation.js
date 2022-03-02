@@ -5,9 +5,9 @@ const Item = styled(Button)({
     boxShadow: "none",
     textTransform: "none",
     fontSize: "1.5vw",
-    height: "35px",
+    height: "3vw",
     textAlign: "center",
-    width: 100,
+    width: "9vw",
     backgroundColor: "#48c293",
     color: "#fdfbf8",
     fontFamily: "BMJUA",
@@ -25,93 +25,97 @@ function Participation() {
             sx={{
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                padding: 10,
-                textAlign: "left",
+                padding: "5vw",
             }}
         >
-            <Box
-                sx={{
-                    backgroundImage: `url(${"/assets/images/sub/partification/partification.png"})`,
-                    padding: 5,
-                    marginLeft: 10,
-                    marginRight: 10,
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                }}
-            >
-                <Grid container>
-                    <Grid item xs={6}></Grid>
-                    <Grid item xs={6}>
-                        <Box
-                            sx={{
-                                backgroundColor: "#ffffffaa",
-                                paddingTop: 5,
-                                paddingBottom: 5,
-                            }}
-                        >
-                            <Stack
-                                spacing={5}
+            <div style={{ width: "80%", margin: "1vw auto" }}>
+                <Box
+                    sx={{
+                        backgroundImage: `url(${"/assets/images/sub/partification/partification.png"})`,
+                        padding: "3vw",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        height: "auto",
+                    }}
+                >
+                    <Grid container sx={{ width: "100%" }}>
+                        <Grid item xs={6}></Grid>
+                        <Grid item xs={6}>
+                            <Box
                                 sx={{
-                                    padding: 3,
+                                    backgroundColor: "#ffffffaa",
+                                    paddingTop: "2vw",
                                 }}
                             >
-                                <div>
-                                    <Typography
-                                        variant="body1"
-                                        component="div"
-                                        sx={{
-                                            color: "#000000",
-                                            fontFamily:
-                                                "NEXON Lv2 Gothic Light",
-                                            fontSize: "1.5vw",
-                                        }}
-                                    >
-                                        “치얼잉글리쉬 한번 참가 해볼까?”
-                                    </Typography>
+                                <Stack
+                                    spacing={"2.5vw"}
+                                    sx={{
+                                        textAlign: "left",
+                                        padding: "2.5vw",
+                                    }}
+                                >
+                                    <div>
+                                        <Typography
+                                            variant="body1"
+                                            component="div"
+                                            sx={{
+                                                color: "#000000",
+                                                fontFamily:
+                                                    "NEXON Lv2 Gothic Light",
+                                                fontSize: "1.5vw",
+                                            }}
+                                        >
+                                            “치얼잉글리쉬 한번 참가 해볼까?”
+                                        </Typography>
 
-                                    <Typography
-                                        variant="h4"
-                                        component="div"
-                                        sx={{
-                                            color: "#000000",
-                                            fontFamily: "SEBANG_Gothic_Bold",
-                                            fontSize: "3vw",
-                                        }}
-                                    >
-                                        치잉 참가 신청서!
-                                    </Typography>
-                                </div>
-                                <div>
-                                    <Typography
-                                        variant="body1"
-                                        component="div"
-                                        sx={{
-                                            color: "#000000",
-                                            fontFamily: "LeferiPoint-WhiteA",
-                                            fontSize: "1.5vw",
-                                        }}
-                                    >
-                                        간단한 13문항의 신청서를 완료하고
-                                    </Typography>
-                                    <Typography
-                                        variant="body1"
-                                        component="div"
-                                        sx={{
-                                            color: "#000000",
-                                            fontFamily: "LeferiPoint-WhiteA",
-                                            fontSize: "1.5vw",
-                                        }}
-                                    >
-                                        치얼잉글리쉬 치어들에게 상담 받으세요!
-                                    </Typography>
-                                </div>
+                                        <Typography
+                                            variant="h4"
+                                            component="div"
+                                            sx={{
+                                                color: "#000000",
+                                                fontFamily:
+                                                    "SEBANG_Gothic_Bold",
+                                                fontSize: "3vw",
+                                            }}
+                                        >
+                                            치잉 참가 신청서!
+                                        </Typography>
+                                    </div>
+                                    <div>
+                                        <Typography
+                                            variant="body1"
+                                            component="div"
+                                            sx={{
+                                                color: "#000000",
+                                                fontFamily:
+                                                    "LeferiPoint-WhiteA",
+                                                fontSize: "1.5vw",
+                                            }}
+                                        >
+                                            간단한 13문항의 신청서를 완료하고
+                                        </Typography>
+                                        <Typography
+                                            variant="body1"
+                                            component="div"
+                                            sx={{
+                                                color: "#000000",
+                                                fontFamily:
+                                                    "LeferiPoint-WhiteA",
+                                                fontSize: "1.5vw",
+                                            }}
+                                        >
+                                            치얼잉글리쉬 치어들에게 상담
+                                            받으세요!
+                                        </Typography>
+                                    </div>
 
-                                <Item>참가하기</Item>
-                            </Stack>
-                        </Box>
+                                    <Item>참가하기</Item>
+                                </Stack>
+                            </Box>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </Box>
+                </Box>
+            </div>
         </Box>
     );
 }

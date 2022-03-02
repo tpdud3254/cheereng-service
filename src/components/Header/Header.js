@@ -1,13 +1,84 @@
-import { Box } from "@mui/material";
-import NavBar from "../NavBar";
+import { Link } from "react-router-dom";
+
+import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Box, AppBar, Toolbar, IconButton, Grid } from "@mui/material";
+
+import NavBar from "../NavBar";
+
+import { useState } from "react";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 
 function Header() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+    const anchor = "left";
+
+    const items = [
+        "치잉이란?",
+        "치잉코스",
+        "테마활동",
+        "참가하기",
+        "활동리뷰",
+        "FAQ",
+    ];
+
+    const [state, setState] = useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
+
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (
+            event.type === "keydown" &&
+            (event.key === "Tab" || event.key === "Shift")
+        ) {
+            return;
+        }
+
+        setState({ ...state, [anchor]: open });
+    };
+
+    const list = (anchor) => (
+        <Box
+            sx={{
+                width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+                fontFamily: "NanumSquareRound",
+            }}
+            role="presentation"
+            onClick={toggleDrawer(anchor, false)}
+            onKeyDown={toggleDrawer(anchor, false)}
+        >
+            <List>
+                {items.map((text, index) => (
+                    <Link
+                        key={index}
+                        to={`/${index}`}
+                        style={{ textDecoration: "none", color: "#eeeeee" }}
+                    >
+                        <ListItem button key={text} sx={{ padding: "3vw" }}>
+                            {text}
+                        </ListItem>
+                        <Divider
+                            sx={{
+                                borderColor: "#ffffff22",
+                            }}
+                        ></Divider>
+                    </Link>
+                ))}
+            </List>
+        </Box>
+    );
 
     return (
         <div>
@@ -18,15 +89,77 @@ function Header() {
                             textAlign: "center",
                             height: 200,
                             backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                            width: "100vw",
                         }}
                     >
                         <Link to={`/`}>
                             <img src="/assets/images/common/logo/logo.png"></img>
                         </Link>
                     </Box>
-                    <NavBar />
+                    <NavBar items={items} />
                 </div>
-            ) : null}
+            ) : (
+                <Box>
+                    <AppBar
+                        position="static"
+                        sx={{ backgroundColor: "#000000", width: "100vw" }}
+                    >
+                        <Toolbar>
+                            <Grid container>
+                                <Grid item xs={4}>
+                                    <IconButton
+                                        size="large"
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ mr: 2 }}
+                                        onClick={toggleDrawer(anchor, true)}
+                                    >
+                                        <MenuIcon />
+                                    </IconButton>
+                                    <Drawer
+                                        anchor={anchor}
+                                        open={state[anchor]}
+                                        onClose={toggleDrawer(anchor, false)}
+                                        PaperProps={{
+                                            sx: {
+                                                // backgroundColor: "#ffffff",
+                                                backgroundColor: "#222222",
+                                                color: "#eeeeee",
+                                                // color: "#222222",
+                                                padding: "2vw",
+                                                // background:
+                                                //     "linear-gradient(-60deg, #f3f5f0 20%, #ffffff 55%, #f3f5f0 85%, #dfe8eb 100%)",
+                                            },
+                                        }}
+                                    >
+                                        {list(anchor)}
+                                    </Drawer>
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <Box
+                                        sx={{
+                                            textAlign: "center",
+                                            width: "100%",
+                                        }}
+                                    >
+                                        <Link to={`/`}>
+                                            <img
+                                                style={{
+                                                    width: "9vw",
+                                                    padding: "2vw",
+                                                }}
+                                                src="/assets/images/common/logo/logo_small.png"
+                                            ></img>
+                                        </Link>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={4}></Grid>
+                            </Grid>
+                        </Toolbar>
+                    </AppBar>
+                </Box>
+            )}
         </div>
     );
 }

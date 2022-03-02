@@ -80,16 +80,22 @@ function Faqs() {
             sx={{
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                paddingTop: 6,
-                paddingBottom: 6,
+                paddingTop: "3vw",
+                paddingBottom: "3vw",
             }}
         >
             <img
-                src="/assets/images/sub/faq_title.png"
+                src="/assets/images/sub/faq/faq_title.png"
                 style={{ width: "15%" }}
             />
 
-            <Box sx={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}>
+            <Box
+                sx={{
+                    padding: "3vw",
+                    paddingLeft: "11vw",
+                    paddingRight: "11vw",
+                }}
+            >
                 {question.map((item, index) => (
                     <Accordion
                         expanded={expanded === `panel${index + 1}`}
@@ -119,7 +125,7 @@ function Faqs() {
                             <Typography
                                 sx={{
                                     fontFamily: "NEXON Lv2 Gothic Light",
-                                    fontSize: "1.5vw",
+                                    fontSize: "1.3rem",
                                 }}
                             >
                                 {item}
@@ -129,9 +135,9 @@ function Faqs() {
                             <Typography
                                 sx={{
                                     backgroundColor: "#98979799",
-                                    padding: 3,
+                                    padding: "1vw",
                                     fontFamily: "LeferiPoint-WhiteA",
-                                    fontSize: "1.5vw",
+                                    fontSize: "1.3rem",
                                     borderLeft: "2px solid #c72117",
                                 }}
                             >
@@ -147,8 +153,8 @@ function Faqs() {
                         color: "#ffffff",
                         fontFamily: "LeferiPoint-WhiteA",
                         fontWeight: "bold",
-                        fontSize: "1.3vw",
-                        padding: 3,
+                        fontSize: "1.3rem",
+                        padding: "1vw",
                         paddingRight: 0,
                         textAlign: "right",
                     }}

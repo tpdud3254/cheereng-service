@@ -11,7 +11,8 @@ function Title({ text, textColor }) {
             sx={{
                 color: textColor ? textColor : "#ffffff",
                 fontFamily: "SEBANG_Gothic_Bold",
-                paddingBottom: 8,
+                fontSize: "1.6vw",
+                paddingBottom: "4vw",
             }}
         >
             <span style={style}>[</span>&nbsp;{text}&nbsp;

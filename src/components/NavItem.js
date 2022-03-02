@@ -12,20 +12,25 @@ const Item = styled(Button)({
     textAlign: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
+    minWidth: 98,
+    paddingLeft: "1vw",
+    paddingRight: "1vw",
+    borderRadius: 0,
     color: "#ffffff",
     fontFamily: "LeferiPoint-WhiteA",
     opacity: 0.8,
     "&:hover": {
-        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
+        background:
+            "linear-gradient(-60deg, #f3f5f000 15%, #fff379 15%, #fff379 85%, #dfe8eb00 85%)",
         boxShadow: "none",
         color: "#31271c",
         opacity: 0.7,
     },
     "&:active": {
         boxShadow: "none",
-        backgroundColor: "#fff37955",
         color: "#31271c",
-        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
+        background:
+            "linear-gradient(-60deg, #f3f5f000 15%, #fff37955 15%, #fff37955 85%, #dfe8eb00 85%)",
         opacity: 1,
     },
 });
@@ -33,7 +38,8 @@ const Item = styled(Button)({
 const useStyles = makeStyles(() => ({
     selected: {
         color: "#31271c",
-        backgroundImage: `url(${"/assets/images/common/navbar_highlight.png"})`,
+        background:
+            "linear-gradient(-60deg, #f3f5f000 15%, #fff379 15%, #fff379 85%, #dfe8eb00 85%)",
         opacity: 1,
     },
 }));

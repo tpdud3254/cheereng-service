@@ -46,12 +46,12 @@ function Gallary() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#ebe7e4",
-                backgroundImage: `url(${"/assets/images/main/gallary/gallary_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/common/paper_bg.jpg"})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                padding: 10,
-                paddingLeft: 20,
-                paddingRight: 20,
+                padding: "5vw",
+                paddingLeft: "10vw",
+                paddingRight: "10vw",
             }}
         >
             <Title text="치얼잉글리쉬 갤러리" textColor="#000000" />
@@ -60,10 +60,10 @@ function Gallary() {
                 sx={{
                     textAlign: "center",
                     backgroundColor: "#ffffff99",
-                    padding: 2,
+                    padding: "1vw",
                 }}
             >
-                <ImageList variant="masonry" cols={3} gap={13}>
+                <ImageList variant="masonry" cols={3} gap={"1vw"}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <img

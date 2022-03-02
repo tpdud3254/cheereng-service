@@ -8,19 +8,29 @@ function Profile({ profile, onClick, opacity, selected }) {
     const summary = profile.summary;
 
     return (
-        <Box sx={{ opacity: selected === name ? 1 : opacity }}>
+        <Box
+            sx={{
+                opacity: selected === name ? 1 : opacity,
+            }}
+        >
             <Avatar
                 alt={name}
                 src={`/assets/images/main/profiles/main/${name}.png`}
                 sx={{
-                    width: { xs: 250, sm: 250, md: 150, lg: 250 },
-                    height: { xs: 250, sm: 250, md: 150, lg: 250 },
-                    marginBottom: 5,
+                    width: "15vw",
+                    height: "15vw",
+                    marginBottom: "4vw",
                 }}
                 onClick={onClick}
             ></Avatar>
 
-            <div style={{ color: "#ffffff", fontFamily: "NanumSquareRound" }}>
+            <div
+                style={{
+                    color: "#ffffff",
+                    fontFamily: "NanumSquareRound",
+                    fontSize: "1.1vw",
+                }}
+            >
                 {summary}
             </div>
         </Box>

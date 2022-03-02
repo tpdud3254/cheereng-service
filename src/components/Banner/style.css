@@ -18,3 +18,9 @@
     --control-bullet-active-color: #6a6a6a;
     --content-background-color: #111111;
 }
+
+@media screen and (max-width: 900px) {
+    .aws-btn {
+        height: unset;
+    }
+}
