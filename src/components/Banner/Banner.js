@@ -11,11 +11,15 @@ function Banner() {
         <AwesomeSlider bullets={false} fillParent={false} className="aws-btn">
             <div
                 style={{ width: "100vw" }}
-                data-src="/assets/images/main/banner/Banner1_2.png"
+                data-src={`/assets/images/main/banner/Banner1_2${
+                    matches ? "" : "_m"
+                }.png`}
             />
             <div
                 style={{ width: "100vw" }}
-                data-src="/assets/images/main/banner/Banner2_2.png"
+                data-src={`/assets/images/main/banner/Banner2_2${
+                    matches ? "" : "_m"
+                }.png`}
             />
         </AwesomeSlider>
     );

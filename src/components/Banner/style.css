@@ -1,5 +1,4 @@
 .aws-btn {
-    height: 400px;
     --slider-height-percentage: 38%;
     --slider-transition-duration: 339ms;
     --organic-arrow-thickness: 4px;
@@ -21,6 +20,6 @@
 
 @media screen and (max-width: 900px) {
     .aws-btn {
-        height: unset;
+        --slider-height-percentage: 100%;
     }
 }
