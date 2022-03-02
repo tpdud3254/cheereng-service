@@ -4,6 +4,8 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import "../../css/font.css";
+
 function ProfileDetail({ selected }) {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));

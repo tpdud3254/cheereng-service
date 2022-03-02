@@ -19,7 +19,12 @@ function Reason() {
                 src={`/assets/images/main/reason/${
                     matches ? "reason" : "reason_m"
                 }.png`}
-                style={{ width: "80%", margin: "6vw" }}
+                style={{
+                    width: matches ? "80%" : "98%",
+                    margin: matches ? "6vw" : "",
+                    marginTop: matches ? "" : "6vw",
+                    marginBottom: matches ? "" : "6vw",
+                }}
             ></img>
         </Box>
     );
