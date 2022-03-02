@@ -17,21 +17,19 @@ function Footer() {
                     variant="body2"
                     component="div"
                     sx={{
-                        color: "#ffd179",
-                        fontFamily: "NanumSquareRound",
-                        fontSize: "0.8vw",
+                        color: "#eeeeee",
+                        fontSize: matches ? "0.8vw" : "3.5vw",
                     }}
                 >
-                    {text[0]}
+                    {text[0]}.
                 </Typography>
 
                 <Typography
                     variant="body2"
                     component="div"
                     sx={{
-                        color: "#ffffff",
-                        fontFamily: "NanumSquareRound",
-                        fontSize: "0.8vw",
+                        color: "#eeeeee",
+                        fontSize: matches ? "0.8vw" : "3.5vw",
                     }}
                 >
                     {text[1]}
@@ -44,8 +42,9 @@ function Footer() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                // backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 width: "100vw",
+                marginBottom: matches ? "" : "16vw",
             }}
         >
             {matches ? (
@@ -79,7 +78,6 @@ function Footer() {
                             component="div"
                             sx={{
                                 color: "#eeeeee",
-                                fontFamily: "Nanum Gothic",
                                 fontSize: "0.6vw",
                                 textAlign: "right",
                                 opacity: 0.7,
@@ -93,7 +91,6 @@ function Footer() {
                             component="div"
                             sx={{
                                 color: "#c30000aa",
-                                fontFamily: "Nanum Gothic",
                                 fontSize: "0.8vw",
                                 textAlign: "right",
                             }}
@@ -106,12 +103,12 @@ function Footer() {
                 <Stack
                     justifyContent="center"
                     alignItems="center"
-                    sx={{ padding: "1.2vw" }}
+                    sx={{ padding: "3vw" }}
                 >
                     <img
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
-                        style={{ width: "7vw" }}
+                        style={{ width: "12vw", margin: "3vw" }}
                     ></img>
                     {info.map((item, index) => (
                         <Item key={index} text={item} />
@@ -122,7 +119,6 @@ function Footer() {
                         component="div"
                         sx={{
                             color: "#eeeeee",
-                            fontFamily: "Nanum Gothic",
                             fontSize: "0.6vw",
                             textAlign: "right",
                             opacity: 0.7,
@@ -135,9 +131,8 @@ function Footer() {
                         variant="body2"
                         component="div"
                         sx={{
-                            color: "#c30000aa",
-                            fontFamily: "Nanum Gothic",
-                            fontSize: "0.8vw",
+                            color: "#dddddd66",
+                            fontSize: matches ? "0.8vw" : "3vw",
                             textAlign: "right",
                         }}
                     >
