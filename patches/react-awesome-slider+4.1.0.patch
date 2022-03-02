@@ -1,5 +1,5 @@
 diff --git a/node_modules/react-awesome-slider/dist/styles.css b/node_modules/react-awesome-slider/dist/styles.css
-index 15ffd56..8298f12 100644
+index 15ffd56..516dda4 100644
 --- a/node_modules/react-awesome-slider/dist/styles.css
 +++ b/node_modules/react-awesome-slider/dist/styles.css
 @@ -84,11 +84,19 @@
@@ -24,3 +24,13 @@ index 15ffd56..8298f12 100644
    .awssld__controls button {
      display: -webkit-box;
      display: -ms-flexbox;
+@@ -126,7 +134,8 @@
+     display: none; }
+   @media all and (max-width: 520px) {
+     .awssld__controls {
+-      visibility: hidden; } }
++      /* visibility: hidden;  */
++    } }
+   .awssld__bar {
+     display: block;
+     width: 100%;
