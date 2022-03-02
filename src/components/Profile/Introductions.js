@@ -25,6 +25,9 @@ function Introductions() {
         setSelected(e.target.alt);
     };
 
+    const onSwiperClick = () => {
+        if (detail) setDetail((cur) => !cur);
+    };
     useEffect(() => {
         if (!detail) {
             setOpacity(1);
@@ -41,6 +44,7 @@ function Introductions() {
                 paddingTop: "5vw",
                 paddingBottom: "5vw",
             }}
+            onClick={onSwiperClick}
         >
             <Title text="CHEER 소개" />
             <Swiper

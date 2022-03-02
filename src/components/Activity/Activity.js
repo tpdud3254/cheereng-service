@@ -40,7 +40,7 @@ function Activity({ obj, index }) {
                 }}
                 variant="woven"
                 cols={3}
-                gap={"1vw"}
+                // gap={"1vw"}
             >
                 {activitiesInfo[index].url.map((item, index) => (
                     <ImageListItem key={item}>

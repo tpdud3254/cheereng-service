@@ -1,6 +1,12 @@
 import { Box, Typography, Stack } from "@mui/material";
 import { mobileProfileInfo as profiles } from "./profileInfo";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function ProfileDetail({ selected }) {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     let profile = {};
     const arr = [1, 2, 3, 4];
     profiles.forEach((e) => {
@@ -33,7 +39,7 @@ function ProfileDetail({ selected }) {
                             sx={{
                                 color: "#ffffff",
                                 fontFamily: "SEBANG_Gothic_Bold",
-                                fontSize: "1.5vw",
+                                fontSize: matches ? "1.5vw" : "4.5vw",
                             }}
                         >
                             <span style={{ color: "#00ffd8" }}>|</span>&nbsp;
@@ -43,8 +49,8 @@ function ProfileDetail({ selected }) {
                         <a href={profile.kakao}>
                             <img
                                 style={{
-                                    width: "2.2vw",
-                                    paddingBottom: "0.5vw",
+                                    width: matches ? "2.2vw" : "6vw",
+                                    paddingBottom: matches ? "0.5vw" : "",
                                 }}
                                 src="/assets/images/common/kakao.png"
                             ></img>
@@ -57,7 +63,7 @@ function ProfileDetail({ selected }) {
                         sx={{
                             color: "#ffffff",
                             fontFamily: "NanumSquare",
-                            fontSize: "1vw",
+                            fontSize: matches ? "1vw" : "4vw",
                         }}
                     >
                         {profile.greeting.split("\n").map((line, i) => {
@@ -69,22 +75,38 @@ function ProfileDetail({ selected }) {
                             );
                         })}
                     </Typography>
-
-                    <Stack
-                        direction="row"
-                        spacing={"4vw"}
-                        justifyContent="center"
-                        alignItems="center"
-                    >
-                        {arr.map((item, index) => (
-                            <img
-                                src={`/assets/images/main/profiles/sub/${
-                                    profile.name
-                                }${index + 1}.png`}
-                                style={{ width: "20%" }}
-                            ></img>
-                        ))}
-                    </Stack>
+                    {matches ? (
+                        <Stack
+                            direction="row"
+                            spacing={"4vw"}
+                            justifyContent="center"
+                            alignItems="center"
+                        >
+                            {arr.map((item, index) => (
+                                <img
+                                    src={`/assets/images/main/profiles/sub/${
+                                        profile.name
+                                    }${index + 1}.png`}
+                                    style={{ width: "20%" }}
+                                    key={index}
+                                ></img>
+                            ))}
+                        </Stack>
+                    ) : (
+                        <ImageList cols={2}>
+                            {arr.map((item, index) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                        src={`/assets/images/main/profiles/sub/${
+                                            profile.name
+                                        }${index + 1}.png`}
+                                        alt={index}
+                                        loading="lazy"
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
+                    )}
                 </Stack>
             </Box>
         </Box>

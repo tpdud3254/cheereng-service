@@ -66,7 +66,11 @@ function Gallary() {
                     padding: "1vw",
                 }}
             >
-                <ImageList variant="masonry" cols={matches ? 3 : 2} gap={"1vw"}>
+                <ImageList
+                    variant="masonry"
+                    cols={matches ? 3 : 2}
+                    // gap={"1vw"}
+                >
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
