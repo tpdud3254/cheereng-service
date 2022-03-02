@@ -1,8 +1,23 @@
 diff --git a/node_modules/react-awesome-slider/dist/styles.css b/node_modules/react-awesome-slider/dist/styles.css
-index 15ffd56..516dda4 100644
+index 15ffd56..4ddf6ad 100644
 --- a/node_modules/react-awesome-slider/dist/styles.css
 +++ b/node_modules/react-awesome-slider/dist/styles.css
-@@ -84,11 +84,19 @@
+@@ -35,12 +35,14 @@
+   position: relative;
+   width: 100%;
+   max-width: 100%; }
++  
+   .awssld__wrapper {
+     display: block;
+     overflow: hidden;
+     position: relative;
+     height: 100%;
+     width: 100%; }
++  
+   .awssld__container {
+     display: block;
+     width: 100%;
+@@ -84,11 +86,19 @@
      .awssld__content > video {
        -o-object-fit: cover;
           object-fit: cover;
@@ -13,18 +28,18 @@ index 15ffd56..516dda4 100644
 +      /* position: absolute; */
        top: 0;
        left: 0; }
-+/* 
++
 +      @media screen and (max-width: 900px) {
 +                .awssld__content > img,
 +            .awssld__content > video {
-+                    width: 100%;
++                    width: unset;
 +              height: unset;
 +            }
-+            } */
++            }
    .awssld__controls button {
      display: -webkit-box;
      display: -ms-flexbox;
-@@ -126,7 +134,8 @@
+@@ -126,7 +136,8 @@
      display: none; }
    @media all and (max-width: 520px) {
      .awssld__controls {
