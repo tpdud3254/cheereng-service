@@ -41,6 +41,8 @@ function App() {
                             top: "auto",
                             bottom: 0,
                             backgroundColor: "#b5a78b",
+                            textAlign: "center",
+                            width: "100vw",
                         }}
                     >
                         <Toolbar>
@@ -49,6 +51,7 @@ function App() {
                                     textAlign: "center",
                                     fontFamily: "GyeonggiTitleM",
                                     fontSize: "5vw",
+                                    width: "100%",
                                 }}
                             >
                                 <Stack
