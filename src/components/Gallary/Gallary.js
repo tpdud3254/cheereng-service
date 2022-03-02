@@ -1,7 +1,10 @@
 import { Box, ImageList, ImageListItem } from "@mui/material";
-import Title from "../Title";
-
+import Title from "../Title/Title";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function Gallary() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     const itemData = [
         {
             img: "/assets/images/main/gallary/6.jpg",
@@ -63,7 +66,7 @@ function Gallary() {
                     padding: "1vw",
                 }}
             >
-                <ImageList variant="masonry" cols={3} gap={"1vw"}>
+                <ImageList variant="masonry" cols={matches ? 3 : 2} gap={"1vw"}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <img

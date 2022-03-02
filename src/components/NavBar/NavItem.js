@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
-import "../css/font.css";
+import "../../css/font.css";
 
 const Item = styled(Button)({
     boxShadow: "none",

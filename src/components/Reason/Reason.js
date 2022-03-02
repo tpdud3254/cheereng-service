@@ -1,5 +1,9 @@
 import { Box } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function Reason() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     return (
         <Box
             sx={{
@@ -12,7 +16,9 @@ function Reason() {
         >
             <img
                 loading="lazy"
-                src="/assets/images/main/reason/reason.png"
+                src={`/assets/images/main/reason/${
+                    matches ? "reason" : "reason_m"
+                }.png`}
                 style={{ width: "80%", margin: "6vw" }}
             ></img>
         </Box>

@@ -1,6 +1,6 @@
 import { Box, Stack, Avatar } from "@mui/material";
 import Profile from "./Profile";
-import Title from "../Title";
+import Title from "../Title/Title";
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { profileInfo, mobileProfileInfo } from "./profileInfo";
@@ -91,6 +91,7 @@ function Introductions() {
                                       style={{
                                           color: "#ffffff",
                                           fontFamily: "NanumSquareRound",
+                                          fontSize: "6vw",
                                       }}
                                   >
                                       {profile.summary}

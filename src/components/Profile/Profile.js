@@ -2,8 +2,12 @@ import { Avatar, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import { profileInfo } from "./profileInfo";
 import "../../css/font.css";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Profile({ profile, onClick, opacity, selected }) {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     const name = profile.name;
     const summary = profile.summary;
 

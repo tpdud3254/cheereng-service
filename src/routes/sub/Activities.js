@@ -8,7 +8,7 @@ import {
     ImageListItem,
 } from "@mui/material";
 import { useState } from "react";
-import Video from "../../components/Video";
+import Video from "../../components/Video/Video";
 import { styled } from "@mui/material/styles";
 
 import { activitiesInfo } from "../../components/Activity/activitiesInfo";

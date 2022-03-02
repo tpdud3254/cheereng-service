@@ -5,7 +5,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, AppBar, Toolbar, IconButton, Grid } from "@mui/material";
 
-import NavBar from "../NavBar";
+import NavBar from "../NavBar/NavBar";
 
 import { useState } from "react";
 import Drawer from "@mui/material/Drawer";
@@ -112,7 +112,11 @@ function Header() {
                                         edge="start"
                                         color="inherit"
                                         aria-label="menu"
-                                        sx={{ mr: 2 }}
+                                        sx={{
+                                            mr: 2,
+                                            height: "100%",
+                                            paddingTop: "4vw",
+                                        }}
                                         onClick={toggleDrawer(anchor, true)}
                                     >
                                         <MenuIcon />
@@ -123,13 +127,9 @@ function Header() {
                                         onClose={toggleDrawer(anchor, false)}
                                         PaperProps={{
                                             sx: {
-                                                // backgroundColor: "#ffffff",
                                                 backgroundColor: "#222222",
                                                 color: "#eeeeee",
-                                                // color: "#222222",
                                                 padding: "2vw",
-                                                // background:
-                                                //     "linear-gradient(-60deg, #f3f5f0 20%, #ffffff 55%, #f3f5f0 85%, #dfe8eb 100%)",
                                             },
                                         }}
                                     >
@@ -140,14 +140,16 @@ function Header() {
                                     <Box
                                         sx={{
                                             textAlign: "center",
+                                            justifyContent: "center",
                                             width: "100%",
                                         }}
                                     >
                                         <Link to={`/`}>
                                             <img
                                                 style={{
-                                                    width: "9vw",
-                                                    padding: "2vw",
+                                                    width: "17vw",
+                                                    paddingTop: "4vw",
+                                                    height: "100%",
                                                 }}
                                                 src="/assets/images/common/logo/logo_small.png"
                                             ></img>
