@@ -32,8 +32,8 @@ function Counselling() {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     padding: "7vw",
-                    paddingLeft: "14vw",
-                    paddingRight: "14vw",
+                    paddingLeft: "15vw",
+                    paddingRight: "15vw",
                     opacity: 0.8,
                 }}
             >
@@ -42,8 +42,8 @@ function Counselling() {
                         textAlign: "center",
                         backgroundColor: "#ffffff99",
                         padding: "7vw",
-                        paddingLeft: "14vw",
-                        paddingRight: "14vw",
+                        paddingLeft: "15vw",
+                        paddingRight: "15vw",
                     }}
                 >
                     <Typography
@@ -53,7 +53,7 @@ function Counselling() {
                             color: "#434343",
                             fontFamily: "LeferiPoint-WhiteA",
                             fontWeight: "bold",
-                            fontSize: "1.8vw",
+                            fontSize: "1.5vw",
                         }}
                     >
                         <div>치어잉글리쉬 리더로 참가하고 싶으신가요?</div>
@@ -65,14 +65,22 @@ function Counselling() {
                         variant="subtitle2"
                         component="div"
                         sx={{
-                            color: "#c21414",
                             fontFamily: "NanumSquare",
                             fontWeight: "bold",
-                            fontSize: "1.8vw",
+                            fontSize: "1.5vw",
                             paddingTop: "3.5vw",
                         }}
                     >
-                        리더가 되는 방법을 확인해 보세요 &gt;
+                        <a
+                            href="http://pf.kakao.com/_ZWfxib"
+                            style={{
+                                textDecoration: "none",
+                                color: "#c21414",
+                                cursor: "pointer",
+                            }}
+                        >
+                            리더가 되는 방법을 확인해 보세요 &gt;
+                        </a>
                     </Typography>
                 </Box>
             </Box>
@@ -82,8 +90,6 @@ function Counselling() {
                     textAlign: "center",
                     backgroundColor: "#ffffff",
                     padding: "7vw",
-                    paddingLeft: "5vw",
-                    paddingRight: "5vw",
                 }}
             >
                 <Typography
@@ -93,7 +99,7 @@ function Counselling() {
                         color: "#b30000",
                         fontFamily: "SEBANG_Gothic_Bold",
                         fontWeight: "bold",
-                        fontSize: "4.3vw",
+                        fontSize: "4vw",
                     }}
                 >
                     새로운 경험,&nbsp;
@@ -104,7 +110,7 @@ function Counselling() {
                             color: "#000000",
                             fontFamily: "SEBANG_Gothic_Bold",
                             fontWeight: "bold",
-                            fontSize: "5.5vw",
+                            fontSize: "5.2vw",
                         }}
                     >
                         치얼잉글리쉬
@@ -130,7 +136,7 @@ function Counselling() {
                         color: "#727272",
                         fontFamily: "NEXON Lv2 Gothic Light",
                         fontWeight: "bold",
-                        fontSize: "2.3vw",
+                        fontSize: "2vw",
                     }}
                 >
                     <div>딱딱한 영어는 이제 그만!</div>
@@ -144,7 +150,7 @@ function Counselling() {
                         color: "#d98809",
                         fontFamily: "NEXON Lv2 Gothic Light",
                         fontWeight: "bold",
-                        fontSize: "2.3vw",
+                        fontSize: "2vw",
                         margin: "2.3vw",
                     }}
                 >
@@ -158,7 +164,14 @@ function Counselling() {
                 ></img>
 
                 <div>
-                    <Item>카톡상담 바로가기</Item>
+                    <a
+                        href="http://pf.kakao.com/_ZWfxib"
+                        style={{
+                            textDecoration: "none",
+                        }}
+                    >
+                        <Item>카톡상담 바로가기</Item>
+                    </a>
                 </div>
             </Box>
         </div>

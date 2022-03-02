@@ -1,6 +1,6 @@
 import { Box, Stack, Avatar } from "@mui/material";
 import Profile from "./Profile";
-import Title from "./Title";
+import Title from "../Title";
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { profileInfo, mobileProfileInfo } from "./profileInfo";

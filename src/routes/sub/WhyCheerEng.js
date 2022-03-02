@@ -104,7 +104,6 @@ function WhyCheerEng() {
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 padding: "3.5vw",
-                width: "95vw",
             }}
         >
             <img

@@ -159,17 +159,26 @@ function Faqs() {
                         textAlign: "right",
                     }}
                 >
-                    이곳에 없는 문의사항이 있다면?{" "}
-                    <span
+                    <a
+                        href="http://pf.kakao.com/_ZWfxib"
                         style={{
-                            fontSize: "1.6vw",
-                            fontFamily: "GyeonggiTitleM",
-                            fontWeight: "bold",
-                            color: "#fff000",
+                            textDecoration: "none",
+                            color: "#ffffff",
+                            cursor: "pointer",
                         }}
                     >
-                        &gt;{" "}
-                    </span>
+                        이곳에 없는 문의사항이 있다면?{" "}
+                        <span
+                            style={{
+                                fontSize: "1.6vw",
+                                fontFamily: "GyeonggiTitleM",
+                                fontWeight: "bold",
+                                color: "#fff000",
+                            }}
+                        >
+                            &gt;{" "}
+                        </span>
+                    </a>
                 </Typography>
             </Box>
         </Box>

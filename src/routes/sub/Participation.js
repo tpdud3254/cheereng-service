@@ -24,8 +24,10 @@ function Participation() {
         <Box
             sx={{
                 backgroundColor: "#000000",
+                backgroundSize: "contain",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
                 padding: "5vw",
+                width: "100vw",
             }}
         >
             <div style={{ width: "80%", margin: "1vw auto" }}>
@@ -38,7 +40,7 @@ function Participation() {
                         height: "auto",
                     }}
                 >
-                    <Grid container sx={{ width: "100%" }}>
+                    <Grid container sx={{ width: "90%" }}>
                         <Grid item xs={6}></Grid>
                         <Grid item xs={6}>
                             <Box
@@ -108,8 +110,14 @@ function Participation() {
                                             받으세요!
                                         </Typography>
                                     </div>
-
-                                    <Item>참가하기</Item>
+                                    <a
+                                        href="https://docs.google.com/forms/d/1k5INEvIH2elAQuxHDmA8axDyDbWrIPKTfaOvhnocaVU/edit"
+                                        style={{
+                                            textDecoration: "none",
+                                        }}
+                                    >
+                                        <Item>참가하기</Item>
+                                    </a>
                                 </Stack>
                             </Box>
                         </Grid>

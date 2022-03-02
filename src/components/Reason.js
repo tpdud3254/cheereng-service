@@ -13,7 +13,7 @@ function Reason() {
             <img
                 loading="lazy"
                 src="/assets/images/main/reason/reason.png"
-                style={{ width: "90%", margin: "6vw" }}
+                style={{ width: "80%", margin: "6vw" }}
             ></img>
         </Box>
     );

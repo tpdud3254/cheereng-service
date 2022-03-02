@@ -40,10 +40,15 @@ function ProfileDetail({ selected }) {
                             {profile.name} &nbsp;/&nbsp;&nbsp;
                             {profile.mbti} &nbsp;/&nbsp;&nbsp;
                         </Typography>
-                        <img
-                            style={{ width: "2.2vw", paddingBottom: "0.5vw" }}
-                            src="/assets/images/common/kakao.png"
-                        ></img>
+                        <a href={profile.kakao}>
+                            <img
+                                style={{
+                                    width: "2.2vw",
+                                    paddingBottom: "0.5vw",
+                                }}
+                                src="/assets/images/common/kakao.png"
+                            ></img>
+                        </a>
                     </Stack>
 
                     <Typography

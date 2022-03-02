@@ -47,7 +47,6 @@ function App() {
                             <Box
                                 sx={{
                                     textAlign: "center",
-                                    width: "100%",
                                     fontFamily: "GyeonggiTitleM",
                                     fontSize: "5vw",
                                 }}

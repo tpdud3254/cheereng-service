@@ -1,7 +1,7 @@
 import { Avatar, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import { profileInfo } from "./profileInfo";
-import "../css/font.css";
+import "../../css/font.css";
 
 function Profile({ profile, onClick, opacity, selected }) {
     const name = profile.name;

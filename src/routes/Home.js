@@ -1,7 +1,7 @@
 import Reason from "../components/Reason";
 import Banner from "../components/Banner/Banner";
 import Gallary from "../components/Gallary/Gallary";
-import Introductions from "../components/Introductions";
+import Introductions from "../components/Profile/Introductions";
 import Counselling from "../components/Counselling/Counselling";
 function Home() {
     return (

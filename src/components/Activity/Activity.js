@@ -20,7 +20,7 @@ function Activity({ obj, index }) {
                 backgroundColor: index % 2 === 0 ? "#ffffff" : "#f1f1f1",
             }}
         >
-            <a name={obj.title}></a>
+            <a name={obj.id}></a>
             <Typography
                 variant="h3"
                 component="div"

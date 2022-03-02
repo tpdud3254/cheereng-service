@@ -81,8 +81,21 @@ function Course({ courseObj }) {
                                         paddingInlineStart: matches ? 40 : 20,
                                     }}
                                 >
-                                    {courseObj.course.map((item) => (
-                                        <li>{item}</li>
+                                    {courseObj.course.map((item, index) => (
+                                        <li>
+                                            <a
+                                                href={
+                                                    courseObj.courseUrl[index]
+                                                }
+                                                style={{
+                                                    textDecoration: "none",
+                                                    color: "#000000",
+                                                    cursor: "pointer",
+                                                }}
+                                            >
+                                                {item}
+                                            </a>
+                                        </li>
                                     ))}
                                 </ul>
                             </Box>
@@ -90,7 +103,7 @@ function Course({ courseObj }) {
                     </Grid>
                     <Grid item xs={4} sx={{ textAlign: "right" }}>
                         <img
-                            style={{ width: "9vw" }}
+                            style={{ height: "15vw" }}
                             src={`/assets/images/sub/course/${courseObj.id}.png`}
                         ></img>
                     </Grid>
