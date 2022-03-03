@@ -140,7 +140,7 @@ function Faqs() {
                                 sx={{
                                     backgroundColor: "#98979799",
                                     padding: "1vw",
-                                    fontFamily: "LeferiPoint-WhiteA",
+                                    fontFamily: "NEXON Lv2 Gothic Light",
                                     fontSize: matches ? "1.3rem" : "1rem",
                                     borderLeft: "2px solid #c72117",
                                 }}
@@ -155,7 +155,7 @@ function Faqs() {
                     component="div"
                     sx={{
                         color: "#ffffff",
-                        fontFamily: "LeferiPoint-WhiteA",
+                        fontFamily: "NanumSquareRound",
                         fontWeight: "bold",
                         fontSize: matches ? "1.3rem" : "1rem",
                         padding: matches ? "1vw" : "3vw",

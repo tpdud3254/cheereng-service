@@ -49,7 +49,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "NEXON Lv2 Gothic Light",
-                                fontSize: matches ? "1.5vw" : "3vw",
+                                fontSize: matches ? "1.5vw" : "4vw",
                             }}
                         >
                             “치얼잉글리쉬 한번 참가 해볼까?”
@@ -61,7 +61,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "SEBANG_Gothic_Bold",
-                                fontSize: matches ? "3vw" : "6vw",
+                                fontSize: matches ? "3vw" : "7vw",
                             }}
                         >
                             치잉 참가 신청서!
@@ -74,7 +74,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "LeferiPoint-WhiteA",
-                                fontSize: matches ? "1.5vw" : "4vw",
+                                fontSize: matches ? "1.5vw" : "3.8vw",
                             }}
                         >
                             간단한 13문항의 신청서를 완료하고
@@ -85,7 +85,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "LeferiPoint-WhiteA",
-                                fontSize: matches ? "1.5vw" : "4vw",
+                                fontSize: matches ? "1.5vw" : "3.8vw",
                             }}
                         >
                             치얼잉글리쉬 치어들에게 상담 받으세요!
