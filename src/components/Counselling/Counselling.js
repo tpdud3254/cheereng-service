@@ -65,7 +65,7 @@ function Counselling() {
                         variant="subtitle2"
                         component="div"
                         sx={{
-                            fontFamily: "NanumSquare",
+                            fontFamily: "S-CoreDream-3Light",
                             fontWeight: "bold",
                             fontSize: "1.5vw",
                             paddingTop: "3.5vw",
