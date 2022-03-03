@@ -60,7 +60,7 @@ function Activities() {
                     >
                         {activitiesInfo.map((item) => (
                             <a
-                                href={item.id}
+                                href={`#${item.id}`}
                                 style={{ textDecoration: "none" }}
                             >
                                 <Item key={item.title}>{item.title}</Item>
