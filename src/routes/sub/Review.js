@@ -1,8 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 function Review() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     const itemData = [
         {
             img: "/assets/images/sub/review/img6.jpg",
@@ -44,7 +48,9 @@ function Review() {
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/sub/review/review_bg.jpg"})`,
                 backgroundSize: "contain",
-                padding: "5vw",
+                padding: matches ? "5vw" : "",
+                paddingTop: matches ? "" : "10vw",
+                paddingBottom: matches ? "" : "10vw",
                 textAlign: "center",
             }}
         >
@@ -52,11 +58,11 @@ function Review() {
                 sx={{
                     backgroundColor: "#ffe57f",
                     textAlign: "center",
-                    fontSize: "1.2vw",
+                    fontSize: matches ? "1.2vw" : "4vw",
                     display: "inline",
                     padding: "0.2vw",
-                    paddingLeft: "2.5vw",
-                    paddingRight: "2.5vw",
+                    paddingLeft: matches ? "2.5vw" : "5vw",
+                    paddingRight: matches ? "2.5vw" : "5vw",
                     borderRadius: 10,
                     color: "#bd5757",
                     fontFamily: "nanumgothic",
@@ -69,9 +75,10 @@ function Review() {
             <Typography
                 sx={{
                     textAlign: "center",
-                    fontSize: "4vw",
+                    fontSize: matches ? "4vw" : "10vw",
                     color: "#4e4e4e",
                     fontFamily: "Cafe24Ssurround",
+                    marginBottom: matches ? "" : "4vw",
                 }}
             >
                 생생카톡후기
@@ -84,9 +91,24 @@ function Review() {
                     padding: "1.8vw",
                 }}
             >
-                <ImageList variant="masonry" cols={3} gap={10}>
-                    {itemData.map((item) => (
+                <ImageList
+                    variant="masonry"
+                    cols={matches ? 3 : 1}
+                    gap={matches ? 10 : 50}
+                >
+                    {itemData.map((item, index) => (
                         <ImageListItem key={item.img}>
+                            {matches ? null : (
+                                <ImageListItemBar
+                                    position="below"
+                                    title={`0${index + 1}`}
+                                    sx={{
+                                        color: "#ffc438",
+                                        fontFamily: "Cafe24Ssurround",
+                                        fontSize: "10vw",
+                                    }}
+                                />
+                            )}
                             <img
                                 src={item.img}
                                 alt={item.title}

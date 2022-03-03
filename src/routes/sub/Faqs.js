@@ -7,6 +7,8 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const question = [
     "영어초보도 할 수 있나요?",
@@ -70,6 +72,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function Faqs() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
     const [expanded, setExpanded] = useState("");
 
     const handleChange = (panel) => (event, newExpanded) => {
@@ -80,13 +84,13 @@ function Faqs() {
             sx={{
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                paddingTop: "3vw",
-                paddingBottom: "3vw",
+                paddingTop: matches ? "3vw" : "10vw",
+                paddingBottom: matches ? "3vw" : "10vw",
             }}
         >
             <img
                 src="/assets/images/sub/faq/faq_title.png"
-                style={{ width: "15%" }}
+                style={{ width: matches ? "15%" : "40vw" }}
             />
 
             <Box
@@ -125,7 +129,7 @@ function Faqs() {
                             <Typography
                                 sx={{
                                     fontFamily: "NEXON Lv2 Gothic Light",
-                                    fontSize: "1.3rem",
+                                    fontSize: matches ? "1.3rem" : "1rem",
                                 }}
                             >
                                 {item}
@@ -137,7 +141,7 @@ function Faqs() {
                                     backgroundColor: "#98979799",
                                     padding: "1vw",
                                     fontFamily: "LeferiPoint-WhiteA",
-                                    fontSize: "1.3rem",
+                                    fontSize: matches ? "1.3rem" : "1rem",
                                     borderLeft: "2px solid #c72117",
                                 }}
                             >
@@ -153,8 +157,8 @@ function Faqs() {
                         color: "#ffffff",
                         fontFamily: "LeferiPoint-WhiteA",
                         fontWeight: "bold",
-                        fontSize: "1.3rem",
-                        padding: "1vw",
+                        fontSize: matches ? "1.3rem" : "1rem",
+                        padding: matches ? "1vw" : "3vw",
                         paddingRight: 0,
                         textAlign: "right",
                     }}
@@ -170,7 +174,7 @@ function Faqs() {
                         이곳에 없는 문의사항이 있다면?{" "}
                         <span
                             style={{
-                                fontSize: "1.6vw",
+                                fontSize: matches ? "1.3rem" : "1rem",
                                 fontFamily: "GyeonggiTitleM",
                                 fontWeight: "bold",
                                 color: "#fff000",
