@@ -79,17 +79,44 @@ function Participation() {
                         >
                             간단한 13문항의 신청서를 완료하고
                         </Typography>
-                        <Typography
-                            variant="body1"
-                            component="div"
-                            sx={{
-                                color: "#000000",
-                                fontFamily: "LeferiPoint-WhiteA",
-                                fontSize: matches ? "1.5vw" : "3.8vw",
-                            }}
-                        >
-                            치얼잉글리쉬 치어들에게 상담 받으세요!
-                        </Typography>
+                        {matches ? (
+                            <Typography
+                                variant="body1"
+                                component="div"
+                                sx={{
+                                    color: "#000000",
+                                    fontFamily: "LeferiPoint-WhiteA",
+                                    fontSize: matches ? "1.5vw" : "3.8vw",
+                                }}
+                            >
+                                치얼잉글리쉬 치어들에게 상담 받으세요!
+                            </Typography>
+                        ) : (
+                            <>
+                                <Typography
+                                    variant="body1"
+                                    component="div"
+                                    sx={{
+                                        color: "#000000",
+                                        fontFamily: "LeferiPoint-WhiteA",
+                                        fontSize: matches ? "1.5vw" : "3.8vw",
+                                    }}
+                                >
+                                    치얼잉글리쉬 치어들에게
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    component="div"
+                                    sx={{
+                                        color: "#000000",
+                                        fontFamily: "LeferiPoint-WhiteA",
+                                        fontSize: matches ? "1.5vw" : "3.8vw",
+                                    }}
+                                >
+                                    상담 받으세요!
+                                </Typography>
+                            </>
+                        )}
                     </div>
                     <a
                         href="https://docs.google.com/forms/d/1k5INEvIH2elAQuxHDmA8axDyDbWrIPKTfaOvhnocaVU/edit"

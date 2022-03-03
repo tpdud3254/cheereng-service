@@ -154,10 +154,9 @@ function Faqs() {
                     variant="subtitle2"
                     component="div"
                     sx={{
-                        color: "#ffffff",
+                        color: "#ffffffaa",
                         fontFamily: "NanumSquareRound",
-                        fontWeight: "bold",
-                        fontSize: matches ? "1.3rem" : "1rem",
+                        fontSize: matches ? "1.3rem" : "0.9rem",
                         padding: matches ? "1vw" : "3vw",
                         paddingRight: 0,
                         textAlign: "right",
