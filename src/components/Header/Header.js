@@ -166,9 +166,8 @@ function Header() {
                                                 component="div"
                                                 sx={{
                                                     color: "#ffffff",
-                                                    fontFamily:
-                                                        "LeferiPoint-WhiteA",
-                                                    fontWeight: "bold",
+                                                    fontFamily: "NIXGONM-Vb",
+                                                    // fontWeight: "bold",
                                                     fontSize: "1rem",
                                                     padding: "3vw",
                                                     textAlign: "center",
