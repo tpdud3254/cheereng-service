@@ -153,7 +153,7 @@ function Header() {
                                     >
                                         <Link
                                             to={`/`}
-                                            sx={{ textDecoration: "none" }}
+                                            style={{ textDecoration: "none" }}
                                         >
                                             {/* <img
                                                 style={{
