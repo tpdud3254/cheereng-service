@@ -167,10 +167,11 @@ function Header() {
                                                 sx={{
                                                     color: "#ffffff",
                                                     fontFamily: "NIXGONM-Vb",
-                                                    fontWeight: "bold",
-                                                    fontSize: "1rem",
+                                                    // fontWeight: "bold",
+                                                    fontSize: "1.2rem",
                                                     padding: "3vw",
                                                     textAlign: "center",
+                                                    lineHeight: 1.2,
                                                 }}
                                             >
                                                 CHEER ENGLISH
