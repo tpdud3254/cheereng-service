@@ -151,7 +151,10 @@ function Header() {
                                             width: "100%",
                                         }}
                                     >
-                                        <Link to={`/`}>
+                                        <Link
+                                            to={`/`}
+                                            sx={{ textDecoration: "none" }}
+                                        >
                                             {/* <img
                                                 style={{
                                                     width: "17vw",
@@ -165,7 +168,7 @@ function Header() {
                                                 sx={{
                                                     color: "#ffffff",
                                                     fontFamily:
-                                                        "LeferiPoint-WhiteA",
+                                                        "GmarketSansBold",
                                                     fontWeight: "bold",
                                                     fontSize: "1rem",
                                                     padding: "3vw",
