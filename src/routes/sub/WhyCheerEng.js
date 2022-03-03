@@ -4,14 +4,16 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function WhyCheerEng() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
+
     const Img = () => {
         return (
             <img
                 src="/assets/images/main/whycheereng/whycheereng.png"
                 style={{
-                    maxHeight: "800px",
-                    maxWidth: "600px",
-                    width: matches ? "30vw" : "60vw",
+                    width: matches ? "30vw" : "80vw",
+                    padding: matches ? "" : "3vw",
                 }}
             ></img>
         );
@@ -20,7 +22,7 @@ function WhyCheerEng() {
     const Text = () => {
         return (
             <Stack
-                spacing={"2.2vw"}
+                spacing={matches ? "2.2vw" : "6vw"}
                 justifyContent="center"
                 alignItems="center"
                 padding={"1.1vw"}
@@ -31,7 +33,7 @@ function WhyCheerEng() {
                     sx={{
                         color: "#ffffff",
                         fontFamily: "InkLipquid",
-                        fontSize: "2.5vw",
+                        fontSize: matches ? "2.5vw" : "6vw",
                         lineHeight: 1.5,
                     }}
                 >
@@ -50,8 +52,8 @@ function WhyCheerEng() {
                     component="div"
                     sx={{
                         color: "#bcbcbc",
-                        fontFamily: "NanumSquare",
-                        fontSize: "1.5vw",
+                        fontFamily: "S-CoreDream-3Light",
+                        fontSize: matches ? "1.5vw" : "4vw",
                     }}
                 >
                     <div>혼자서 공부하는 딱딱하고 지루한 영어는 그만!</div>
@@ -71,7 +73,7 @@ function WhyCheerEng() {
                         sx={{
                             color: "#000000",
                             fontFamily: "LeferiPoint-SpecialItalicA",
-                            fontSize: "1.4vw",
+                            fontSize: matches ? "1.4vw" : "3.8vw",
                             lineHeight: 1.5,
                         }}
                     >
@@ -88,26 +90,24 @@ function WhyCheerEng() {
                 >
                     <img
                         src="/assets/images/main/whycheereng/whycheereng_detail.png"
-                        style={{ width: "25vw" }}
+                        style={{ width: matches ? "25vw" : "60vw" }}
                     ></img>
                 </Box>
             </Stack>
         );
     };
 
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.up("md"));
     return (
         <Box
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
                 backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                padding: "3.5vw",
+                padding: matches ? "3.5vw" : "6vw",
             }}
         >
             <img
-                style={{ width: "30vw" }}
+                style={{ width: matches ? "30vw" : "70vw" }}
                 src="/assets/images/main/whycheereng/whycheerengTitle.png"
             ></img>
             <Divider
@@ -117,7 +117,8 @@ function WhyCheerEng() {
                     margin: "2vw",
                     marginLeft: "6vw",
                     marginRight: "6vw",
-                    borderBottomWidth: "medium",
+                    borderBottomWidth: matches ? "medium" : "small",
+                    marginBottom: matches ? "" : "3vw",
                 }}
             />
 
@@ -126,7 +127,7 @@ function WhyCheerEng() {
                 direction={matches ? "row" : "column"}
                 justifyContent="center"
                 alignItems="center"
-                width="100vw"
+                width={matches ? "100vw" : "unset"}
             >
                 <Img />
                 <Text />
