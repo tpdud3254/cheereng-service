@@ -39,7 +39,9 @@ function Participation() {
                     spacing={"2.5vw"}
                     sx={{
                         textAlign: matches ? "left" : "center",
-                        padding: "2.5vw",
+                        padding: matches ? "2.5vw" : "unset",
+                        paddingTop: matches ? "2.5vw" : "5vw",
+                        paddingBottom: matches ? "2.5vw" : "5vw",
                     }}
                 >
                     <div>
@@ -67,6 +69,13 @@ function Participation() {
                             치잉 참가 신청서!
                         </Typography>
                     </div>
+                    {matches ? null : (
+                        <img
+                            src="/assets/images/sub/partification/partification_m.png"
+                            style={{ width: "100vw", opacity: 0.9 }}
+                        ></img>
+                    )}
+
                     <div>
                         <Typography
                             variant="body1"
@@ -168,25 +177,13 @@ function Participation() {
                     <Box
                         sx={{
                             backgroundColor: "#ead8cc",
-                            height: "50vw",
                             justifyContent: "center",
                             alignItems: "center",
-                            display: "flex",
-                            border: "1px solid black",
-                            padding: "10vw",
+                            paddingTop: "10vw",
+                            paddingBottom: "10vw",
                         }}
                     >
-                        <Box
-                            sx={{
-                                backgroundImage: `url(${`/assets/images/sub/partification/partification_m.png`})`,
-                                padding: "6vw",
-                                backgroundSize: matches ? "contain" : "cover",
-                                backgroundRepeat: "no-repeat",
-                                height: matches ? "auto" : "50vw",
-                            }}
-                        >
-                            <Text />
-                        </Box>
+                        <Text />
                     </Box>
                 )}
             </div>

@@ -157,18 +157,17 @@ function Header() {
                                         >
                                             {/* <img
                                                 style={{
-                                                    width: "17vw",
-                                                    paddingTop: "4vw",
+                                                    width: "34vw",
                                                     height: "100%",
                                                 }}
-                                                src="/assets/images/common/logo/logo_small.png"
+                                                src="/assets/images/common/logo/logo_appbar.png"
                                             ></img> */}
                                             <Typography
                                                 component="div"
                                                 sx={{
                                                     color: "#ffffff",
                                                     fontFamily:
-                                                        "GmarketSansBold",
+                                                        "LeferiPoint-WhiteA",
                                                     fontWeight: "bold",
                                                     fontSize: "1rem",
                                                     padding: "3vw",
