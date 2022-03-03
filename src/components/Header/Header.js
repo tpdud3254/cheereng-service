@@ -167,7 +167,7 @@ function Header() {
                                                 sx={{
                                                     color: "#ffffff",
                                                     fontFamily: "NIXGONM-Vb",
-                                                    // fontWeight: "bold",
+                                                    fontWeight: "bold",
                                                     fontSize: "1rem",
                                                     padding: "3vw",
                                                     textAlign: "center",
