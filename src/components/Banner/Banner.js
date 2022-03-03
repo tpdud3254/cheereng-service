@@ -43,7 +43,7 @@ function Banner() {
                             src={`/assets/images/main/banner/Banner2_2${
                                 matches ? "" : "_m"
                             }.png`}
-                            style={{ width: "83%" }}
+                            style={{ width: matches ? "83%" : "99%" }}
                         ></img>
                     </Link>
                 }
