@@ -12,7 +12,7 @@ function Courses() {
             sx={{
                 backgroundColor: "#ffffff",
                 width: matches ? "100%" : "",
-                padding: matched ? 1 : "",
+                padding: matches ? 1 : "",
             }}
         >
             {courseInfo.map((item) => (
