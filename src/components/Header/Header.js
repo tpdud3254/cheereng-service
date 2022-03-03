@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Box, AppBar, Toolbar, IconButton, Grid } from "@mui/material";
+import {
+    Box,
+    AppBar,
+    Toolbar,
+    IconButton,
+    Grid,
+    Typography,
+} from "@mui/material";
 
 import NavBar from "../NavBar/NavBar";
 
@@ -145,14 +152,28 @@ function Header() {
                                         }}
                                     >
                                         <Link to={`/`}>
-                                            <img
+                                            {/* <img
                                                 style={{
                                                     width: "17vw",
                                                     paddingTop: "4vw",
                                                     height: "100%",
                                                 }}
                                                 src="/assets/images/common/logo/logo_small.png"
-                                            ></img>
+                                            ></img> */}
+                                            <Typography
+                                                component="div"
+                                                sx={{
+                                                    color: "#ffffff",
+                                                    fontFamily:
+                                                        "LeferiPoint-WhiteA",
+                                                    fontWeight: "bold",
+                                                    fontSize: "1rem",
+                                                    padding: "3vw",
+                                                    textAlign: "center",
+                                                }}
+                                            >
+                                                CHEER ENGLISH
+                                            </Typography>
                                         </Link>
                                     </Box>
                                 </Grid>
