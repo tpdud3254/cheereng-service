@@ -11,8 +11,8 @@ function Courses() {
         <Box
             sx={{
                 backgroundColor: "#ffffff",
-                width: matches ? "100%" : "",
-                padding: matches ? 1 : "",
+                width: matches ? "100%" : "unset",
+                padding: matches ? 1 : "unset",
             }}
         >
             {courseInfo.map((item) => (
