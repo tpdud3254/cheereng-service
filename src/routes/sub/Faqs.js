@@ -32,45 +32,6 @@ const answer = [
     "모임은 보통 6~8명으로 진행됩니다.",
 ];
 
-const Accordion = styled((props) => (
-    <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
-    backgroundColor: "#ffffff00",
-    color: "#ffffff",
-    "&:not(:last-child)": {
-        borderBottom: 0,
-    },
-    "&:before": {
-        display: "none",
-    },
-}));
-
-const AccordionSummary = styled((props) => (
-    <MuiAccordionSummary
-        expandIcon={<AddIcon sx={{ fontSize: "0.9rem" }} />}
-        {...props}
-    />
-))(({ theme }) => ({
-    borderBottom: "1px solid #ffffff",
-    backgroundColor:
-        theme.palette.mode === "dark"
-            ? "rgba(255, 255, 255, .05)"
-            : "rgba(0, 0, 0, .03)",
-    flexDirection: "row-reverse",
-    "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
-        transform: "rotate(180deg)",
-    },
-    "& .MuiAccordionSummary-content": {
-        marginLeft: theme.spacing(1),
-    },
-    padding: 3,
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    padding: theme.spacing(5),
-    borderBottom: "1px solid #ffffff",
-}));
-
 function Faqs() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -79,6 +40,45 @@ function Faqs() {
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
     };
+
+    const Accordion = styled((props) => (
+        <MuiAccordion disableGutters elevation={0} square {...props} />
+    ))(({ theme }) => ({
+        backgroundColor: "#ffffff00",
+        color: "#ffffff",
+        "&:not(:last-child)": {
+            borderBottom: 0,
+        },
+        "&:before": {
+            display: "none",
+        },
+    }));
+
+    const AccordionSummary = styled((props) => (
+        <MuiAccordionSummary
+            expandIcon={<AddIcon sx={{ fontSize: "0.9rem" }} />}
+            {...props}
+        />
+    ))(({ theme }) => ({
+        borderBottom: "1px solid #ffffff",
+        backgroundColor:
+            theme.palette.mode === "dark"
+                ? "rgba(255, 255, 255, .05)"
+                : "rgba(0, 0, 0, .03)",
+        flexDirection: "row-reverse",
+        "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+            transform: "rotate(180deg)",
+        },
+        "& .MuiAccordionSummary-content": {
+            marginLeft: theme.spacing(1),
+        },
+        padding: 3,
+    }));
+
+    const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+        padding: theme.spacing(matches ? 5 : 1),
+        borderBottom: "1px solid #ffffff",
+    }));
     return (
         <Box
             sx={{

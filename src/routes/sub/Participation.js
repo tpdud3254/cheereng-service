@@ -10,10 +10,10 @@ function Participation() {
     const Item = styled(Button)({
         boxShadow: "none",
         textTransform: "none",
-        fontSize: matches ? "1.5vw" : "5vw",
-        height: matches ? "3vw" : "10vw",
+        fontSize: matches ? "1.5vw" : "4vw",
+        height: matches ? "3vw" : "9vw",
         textAlign: "center",
-        width: matches ? "9vw" : "30vw",
+        width: matches ? "9vw" : "25vw",
         backgroundColor: "#48c293",
         color: "#fdfbf8",
         fontFamily: "BMJUA",
@@ -49,7 +49,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "NEXON Lv2 Gothic Light",
-                                fontSize: matches ? "1.5vw" : "4vw",
+                                fontSize: matches ? "1.5vw" : "3vw",
                             }}
                         >
                             “치얼잉글리쉬 한번 참가 해볼까?”
@@ -61,7 +61,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "SEBANG_Gothic_Bold",
-                                fontSize: matches ? "3vw" : "7vw",
+                                fontSize: matches ? "3vw" : "6vw",
                             }}
                         >
                             치잉 참가 신청서!
@@ -74,7 +74,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "LeferiPoint-WhiteA",
-                                fontSize: matches ? "1.5vw" : "4.5vw",
+                                fontSize: matches ? "1.5vw" : "4vw",
                             }}
                         >
                             간단한 13문항의 신청서를 완료하고
@@ -85,7 +85,7 @@ function Participation() {
                             sx={{
                                 color: "#000000",
                                 fontFamily: "LeferiPoint-WhiteA",
-                                fontSize: matches ? "1.5vw" : "4.5vw",
+                                fontSize: matches ? "1.5vw" : "4vw",
                             }}
                         >
                             치얼잉글리쉬 치어들에게 상담 받으세요!
@@ -120,28 +120,48 @@ function Participation() {
                     margin: matches ? "1vw auto" : "",
                 }}
             >
-                <Box
-                    sx={{
-                        backgroundImage: `url(${`/assets/images/sub/partification/partification${
-                            matches ? "" : "_m"
-                        }.png`})`,
-                        padding: "3vw",
-                        backgroundSize: matches ? "contain" : "cover",
-                        backgroundRepeat: "no-repeat",
-                        height: matches ? "auto" : "50vw",
-                    }}
-                >
-                    {matches ? (
+                {matches ? (
+                    <Box
+                        sx={{
+                            backgroundImage: `url(${`/assets/images/sub/partification/partification.png`})`,
+                            padding: "3vw",
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            height: "auto",
+                        }}
+                    >
                         <Grid container sx={{ width: "90%" }}>
                             <Grid item xs={6}></Grid>
                             <Grid item xs={6}>
                                 <Text />
                             </Grid>
                         </Grid>
-                    ) : (
-                        <Text />
-                    )}
-                </Box>
+                    </Box>
+                ) : (
+                    <Box
+                        sx={{
+                            backgroundColor: "#ead8cc",
+                            height: "50vw",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            display: "flex",
+                            border: "1px solid black",
+                            padding: "10vw",
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                backgroundImage: `url(${`/assets/images/sub/partification/partification_m.png`})`,
+                                padding: "6vw",
+                                backgroundSize: matches ? "contain" : "cover",
+                                backgroundRepeat: "no-repeat",
+                                height: matches ? "auto" : "50vw",
+                            }}
+                        >
+                            <Text />
+                        </Box>
+                    </Box>
+                )}
             </div>
         </Box>
     );
