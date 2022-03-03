@@ -33,7 +33,7 @@ function WhyCheerEng() {
                     sx={{
                         color: "#ffffff",
                         fontFamily: "InkLipquid",
-                        fontSize: matches ? "2.5vw" : "6vw",
+                        fontSize: matches ? "2.5vw" : "6.5vw",
                         lineHeight: 1.5,
                     }}
                 >
@@ -63,7 +63,7 @@ function WhyCheerEng() {
 
                 <Box
                     sx={{
-                        backgroundColor: "#979696aa",
+                        backgroundColor: "#dcdcdcaa",
                         padding: 2,
                     }}
                 >

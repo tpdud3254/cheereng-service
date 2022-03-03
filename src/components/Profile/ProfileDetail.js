@@ -65,7 +65,7 @@ function ProfileDetail({ selected }) {
                         sx={{
                             color: "#ffffff",
                             fontFamily: "S-CoreDream-3Light",
-                            fontSize: matches ? "1vw" : "3vw",
+                            fontSize: matches ? "1vw" : "3.5vw",
                         }}
                     >
                         {profile.greeting.split("\n").map((line, i) => {

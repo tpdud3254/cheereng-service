@@ -29,7 +29,7 @@ function Reason() {
                 ></img>
             ) : (
                 <Stack
-                    spacing={"4vw"}
+                    spacing={"10vw"}
                     justifyContent="center"
                     alignItems="center"
                 >

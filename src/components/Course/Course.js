@@ -4,22 +4,9 @@ import Paper from "@mui/material/Paper";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-}));
 function Course({ courseObj }) {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
-    const info = [
-        "Group class 40분, 2회 (cheating, 게임, 레벨인식)",
-        "Zoom Group Class 1회",
-        "Chat Class 1회",
-        "Outing Class (비용별도)",
-    ];
 
     const color = {
         yellow: ["#ffd200", "#fef1abaa"],
@@ -31,13 +18,15 @@ function Course({ courseObj }) {
             sx={{
                 backgroundColor: courseObj.bgColor,
                 padding: "3vw",
-                paddingLeft: "10vw",
-                paddingRight: "10vw",
+                paddingLeft: matches ? "10vw" : "",
+                paddingRight: matches ? "10vw" : "",
+                paddingTop: matches ? "" : "6vw",
+                paddingBottom: matches ? "" : "6vw",
             }}
         >
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={"1vw"}>
-                    <Grid item xs={8}>
+                <Grid container spacing={matches ? "1vw" : "3vw"}>
+                    <Grid item xs={10}>
                         <Stack
                             spacing={"1.5vw"}
                             justifyContent="center"
@@ -50,7 +39,7 @@ function Course({ courseObj }) {
                                     sx={{
                                         color: "#000000",
                                         fontFamily: "SEBANG_Gothic_Bold",
-                                        fontSize: "2.1vw",
+                                        fontSize: matches ? "2.1vw" : "5vw",
                                     }}
                                 >
                                     <span
@@ -64,7 +53,12 @@ function Course({ courseObj }) {
                                 </Typography>
                                 <div>
                                     {courseObj.badge ? (
-                                        <img src="/assets/images/sub/course/primeum_badge.png"></img>
+                                        <img
+                                            src="/assets/images/sub/course/primeum_badge.png"
+                                            style={{
+                                                width: matches ? "" : "20vw",
+                                            }}
+                                        ></img>
                                     ) : null}
                                 </div>
                             </Stack>
@@ -73,7 +67,7 @@ function Course({ courseObj }) {
                                     backgroundColor: color[courseObj.theme][1],
                                     lineHeight: 1.5,
                                     fontFamily: "NanumSquare",
-                                    fontSize: "1.5vw",
+                                    fontSize: matches ? "1.5vw" : "3vw",
                                 }}
                             >
                                 <ul
@@ -101,7 +95,7 @@ function Course({ courseObj }) {
                             </Box>
                         </Stack>
                     </Grid>
-                    <Grid item xs={4} sx={{ textAlign: "right" }}>
+                    <Grid item xs={2} sx={{ textAlign: "right" }}>
                         <img
                             style={{ height: "15vw" }}
                             src={`/assets/images/sub/course/${courseObj.id}.png`}
@@ -110,7 +104,9 @@ function Course({ courseObj }) {
                     <Grid item xs={12}>
                         <img
                             style={{ width: "100%" }}
-                            src={`/assets/images/sub/course/${courseObj.id}_schedule.png`}
+                            src={`/assets/images/sub/course/${
+                                courseObj.id
+                            }_schedule${matches ? "" : "_m"}.png`}
                         ></img>
                     </Grid>
                 </Grid>

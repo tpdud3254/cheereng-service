@@ -119,7 +119,7 @@ function Footer() {
                         component="div"
                         sx={{
                             color: "#eeeeee",
-                            fontSize: "0.6vw",
+                            fontSize: matches ? "0.6vw" : "3vw",
                             textAlign: "right",
                             opacity: 0.7,
                         }}

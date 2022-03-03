@@ -13,37 +13,49 @@ import { styled } from "@mui/material/styles";
 
 import { activitiesInfo } from "../../components/Activity/activitiesInfo";
 import Activity from "../../components/Activity/Activity";
-
-const Item = styled(Button)({
-    boxShadow: "none",
-    textTransform: "none",
-    fontSize: "1.3vw",
-    height: "2.8vw",
-    textAlign: "center",
-    backgroundColor: "#dcbf8b",
-    color: "#fdfbf8",
-    fontFamily: "SEBANG_Gothic_Bold",
-    "&:hover": {
-        backgroundColor: "#dcbf8b",
-        boxShadow: "none",
-        color: "#31271c",
-        opacity: 0.7,
-    },
-});
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Activities() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
+
+    const Item = styled(Button)({
+        boxShadow: "none",
+        textTransform: "none",
+        fontSize: matches ? "1.3vw" : "3vw",
+        height: matches ? "2.8vw" : "6vw",
+        textAlign: "center",
+        backgroundColor: "#dcbf8b",
+        color: "#fdfbf8",
+        fontFamily: "SEBANG_Gothic_Bold",
+        "&:hover": {
+            backgroundColor: "#dcbf8b",
+            boxShadow: "none",
+            color: "#31271c",
+            opacity: 0.7,
+        },
+    });
+
     return (
         <>
             <Video />
 
-            <Box sx={{ paddingTop: "3vw", paddingBottom: "3vw" }}>
+            <Box
+                sx={{
+                    paddingTop: matches ? "3vw" : "6vw",
+                    paddingBottom: matches ? "3vw" : "6vw",
+                }}
+            >
                 <Box sx={{ backgroundColor: "#f1f1f1" }}>
                     <Stack
                         spacing={"3vw"}
                         direction="row"
                         justifyContent="center"
                         alignItems="center"
-                        sx={{ height: "4.3vw" }}
+                        sx={{
+                            height: matches ? "4.3vw" : "10vw",
+                        }}
                     >
                         {activitiesInfo.map((item) => (
                             <a
