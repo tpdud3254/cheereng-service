@@ -45,6 +45,7 @@ function Activities() {
                 sx={{
                     paddingTop: matches ? "3vw" : "6vw",
                     paddingBottom: matches ? "3vw" : "6vw",
+                    backgroundColor: "#ffffff",
                 }}
             >
                 <Box sx={{ backgroundColor: "#f1f1f1" }}>

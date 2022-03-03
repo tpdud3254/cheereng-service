@@ -34,7 +34,7 @@ function Counselling() {
                     padding: "7vw",
                     paddingLeft: "15vw",
                     paddingRight: "15vw",
-                    opacity: 0.8,
+                    // opacity: 0.8,
                 }}
             >
                 <Box
