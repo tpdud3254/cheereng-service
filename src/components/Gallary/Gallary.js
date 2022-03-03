@@ -17,7 +17,7 @@ function Gallary() {
                 backgroundImage: `url(${"/assets/images/common/paper_bg.jpg"})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                padding: "5vw",
+                padding: matches ? "5vw" : "10vw",
                 paddingLeft: "10vw",
                 paddingRight: "10vw",
             }}

@@ -41,8 +41,8 @@ function Introductions() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                paddingTop: "5vw",
-                paddingBottom: "5vw",
+                paddingTop: matches ? "5vw" : "10vw",
+                paddingBottom: matches ? "5vw" : "10vw",
             }}
             onClick={onSwiperClick}
         >
@@ -95,7 +95,7 @@ function Introductions() {
                                       style={{
                                           color: "#ffffff",
                                           fontFamily: "NanumSquareRound",
-                                          fontSize: "6vw",
+                                          fontSize: "5vw",
                                       }}
                                   >
                                       {profile.summary}
