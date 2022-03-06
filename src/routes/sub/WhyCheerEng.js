@@ -12,7 +12,7 @@ function WhyCheerEng() {
             <img
                 src="/assets/images/main/whycheereng/whycheereng.png"
                 style={{
-                    width: matches ? "30vw" : "80vw",
+                    width: matches ? "38vw" : "80vw",
                     padding: matches ? "" : "3vw",
                 }}
             ></img>
@@ -57,7 +57,7 @@ function WhyCheerEng() {
                     }}
                 >
                     <div>혼자서 공부하는 딱딱하고 지루한 영어는 그만!</div>
-                    <div>이제는 치어와 다양한 사람들과 만나서</div>
+                    <div>이제는 치어와 함께 다양한 사람들과 만나면서</div>
                     <div> 직접 영어로 말해보세요~</div>
                 </Typography>
 
