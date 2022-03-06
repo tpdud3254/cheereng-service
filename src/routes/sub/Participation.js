@@ -86,7 +86,7 @@ function Participation() {
                                 fontSize: matches ? "1.5vw" : "3.8vw",
                             }}
                         >
-                            간단한 13문항의 신청서를 완료하고
+                            간단한 10문항의 신청서를 완료하고
                         </Typography>
                         {matches ? (
                             <Typography
@@ -132,6 +132,7 @@ function Participation() {
                         style={{
                             textDecoration: "none",
                         }}
+                        target="_blank"
                     >
                         <Item>참가하기</Item>
                     </a>
