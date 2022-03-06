@@ -122,7 +122,8 @@ function Header() {
                                         sx={{
                                             mr: 2,
                                             height: "100%",
-                                            paddingTop: "4vw",
+                                            width: "60px",
+                                            // paddingTop: "4vw",
                                         }}
                                         onClick={toggleDrawer(anchor, true)}
                                     >
@@ -155,14 +156,14 @@ function Header() {
                                             to={`/`}
                                             style={{ textDecoration: "none" }}
                                         >
-                                            {/* <img
+                                            <img
                                                 style={{
-                                                    width: "34vw",
-                                                    height: "100%",
+                                                    width: "15vw",
+                                                    padding: 10,
                                                 }}
-                                                src="/assets/images/common/logo/logo_appbar.png"
-                                            ></img> */}
-                                            <Typography
+                                                src="/assets/images/common/logo/logo_small.png"
+                                            ></img>
+                                            {/* <Typography
                                                 component="div"
                                                 sx={{
                                                     color: "#ffffff",
@@ -175,7 +176,7 @@ function Header() {
                                                 }}
                                             >
                                                 CHEER ENGLISH
-                                            </Typography>
+                                            </Typography> */}
                                         </Link>
                                     </Box>
                                 </Grid>
