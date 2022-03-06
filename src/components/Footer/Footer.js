@@ -9,6 +9,7 @@ function Footer() {
         ["대표자", "조미선"],
         ["주소", "서울 금천구 서부샛길 528, 327호"],
         ["사업자등록번호", "379-17-01844"],
+        ["전화번호", "02) 858-6457"],
     ];
     const Item = ({ text }) => {
         return (
@@ -58,7 +59,7 @@ function Footer() {
                     <img
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
-                        style={{ width: "7vw" }}
+                        style={{ width: "9vw" }}
                     ></img>
 
                     <Stack>
@@ -108,7 +109,7 @@ function Footer() {
                     <img
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
-                        style={{ width: "12vw", margin: "3vw" }}
+                        style={{ width: "17vw", margin: "3vw" }}
                     ></img>
                     {info.map((item, index) => (
                         <Item key={index} text={item} />
