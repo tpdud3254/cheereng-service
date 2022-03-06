@@ -21,7 +21,7 @@ export const profileInfo = [
             name: "Hoon",
             mbti: "ISFP",
             greeting:
-                "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!! 재미 뒤에 영어가 쫒아오는 모습을!!\n언제나 활기찬 Hoon’s class 준비되있습니다.",
+                "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
             kakao: "https://open.kakao.com/o/sp9hP02d",
         },
     ],
@@ -54,7 +54,7 @@ export const profileInfo = [
     ],
     [
         {
-            summary: "",
+            summary: "열정티처 Michelle",
             name: "Michelle",
             mbti: "ESFP",
             greeting:
@@ -70,7 +70,7 @@ export const mobileProfileInfo = [
         name: "Dauny",
         mbti: "ESTJ",
         greeting:
-            "안녕하세요 Cheer Dauny 입니다~ㅎ\n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
+            "안녕하세요 Cheer Dauny 입니다~ㅎ/n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
         kakao: "https://open.kakao.com/o/sVBiLZ2d",
     },
     {
@@ -86,7 +86,7 @@ export const mobileProfileInfo = [
         name: "Hoon",
         mbti: "ISFP",
         greeting:
-            "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!! 재미 뒤에 영어가 쫒아오는 모습을!!\n언제나 활기찬 Hoon’s class 준비되있습니다.",
+            "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
         kakao: "https://open.kakao.com/o/sp9hP02d",
     },
     {
@@ -114,7 +114,7 @@ export const mobileProfileInfo = [
         kakao: "https://open.kakao.com/o/syTQX02d",
     },
     {
-        summary: "",
+        summary: "열정티처 Michelle",
         name: "Michelle",
         mbti: "ESFP",
         greeting:

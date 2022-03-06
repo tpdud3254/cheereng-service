@@ -48,7 +48,7 @@ function ProfileDetail({ selected }) {
                             {profile.name} &nbsp;/&nbsp;&nbsp;
                             {profile.mbti} &nbsp;/&nbsp;&nbsp;
                         </Typography>
-                        <a href={profile.kakao}>
+                        <a href={profile.kakao} target="_blank">
                             <img
                                 style={{
                                     width: matches ? "2.2vw" : "6vw",
