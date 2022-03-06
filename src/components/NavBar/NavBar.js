@@ -20,7 +20,7 @@ function NavBar({ items }) {
                 }}
             >
                 <Stack
-                    spacing={15}
+                    spacing={12}
                     direction="row"
                     justifyContent="center"
                     alignItems="center"

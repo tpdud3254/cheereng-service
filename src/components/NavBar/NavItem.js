@@ -7,8 +7,9 @@ import "../../css/font.css";
 const Item = styled(Button)({
     boxShadow: "none",
     textTransform: "none",
-    fontSize: 17,
+    fontSize: "1.2rem",
     height: "30px",
+    fontWeight: "bold",
     textAlign: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
