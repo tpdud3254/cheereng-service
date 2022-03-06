@@ -1,7 +1,7 @@
 export const activitiesInfo = [
     {
         id: "group",
-        title: "그룹수업",
+        title: "Group Class",
         explain:
             "외국인 선생님과 친구들이 함께 하는 영어회화\n그리고 이어지는 게임 놀이!",
         url: [
@@ -12,7 +12,7 @@ export const activitiesInfo = [
     },
     {
         id: "zoom",
-        title: "Zoom",
+        title: "Zoom Class",
         explain: "온라인에서 만나는 치어와 학생들의 친목도모",
         url: [
             "/assets/images/sub/activity/zoom/zoom1.png",
@@ -22,8 +22,8 @@ export const activitiesInfo = [
     },
     {
         id: "outing",
-        title: "Outing",
-        explain: "치어잉글리쉬 매달 1번 여행 정기모임",
+        title: "Outing Class",
+        explain: "치얼잉글리쉬 매달 1번 여행 정기모임",
         url: [
             "/assets/images/sub/activity/outing/outing1.jpg",
             "/assets/images/sub/activity/outing/outing2.jpg",
@@ -32,8 +32,8 @@ export const activitiesInfo = [
     },
     {
         id: "chatting",
-        title: "Chatting",
-        explain: "그룹수업 전 채팅을 통한 예습 공부\n(부담감 제로!)",
+        title: "Chatting Class",
+        explain: "그룹수업 전 채팅을 통한 예습 공부\n부담감 제로!",
         url: [
             "/assets/images/sub/activity/chatting/chatting1.png",
             "/assets/images/sub/activity/chatting/chatting2.png",

@@ -17,15 +17,13 @@ function Video() {
                 alignItems="center"
                 sx={{
                     backgroundColor: "#000000",
-                    backgroundImage: `url(${"/assets/images/common/paper_bg.jpg"})`,
-                    backgroundSize: "cover",
                 }}
             >
                 <ReactPlayer
                     className="react-player"
                     url={url} // 플레이어 url
-                    width="unset" // 플레이어 크기 (가로)
-                    height="360px" // 플레이어 크기 (세로)
+                    width="100%" // 플레이어 크기 (가로)
+                    height="unset" // 플레이어 크기 (세로)
                     playing={true} // 자동 재생 on
                     muted={true} // 자동 재생 on
                     controls={false} // 플레이어 컨트롤 노출 여부
