@@ -56,8 +56,8 @@ function Counselling() {
                             fontSize: "1.5vw",
                         }}
                     >
-                        <div>치어잉글리쉬 리더로 참가하고 싶으신가요?</div>
-                        <div>즐겁고 유쾌한스터디를 만들어보세요.</div>
+                        <div>치얼잉글리쉬 리더로 참가하고 싶으신가요?</div>
+                        <div>즐겁고 유쾌한 스터디를 만들어보세요.</div>
                         <div>치어잉글리쉬가 도와줍니다.</div>
                     </Typography>
 
@@ -78,6 +78,7 @@ function Counselling() {
                                 color: "#c21414",
                                 cursor: "pointer",
                             }}
+                            target="_blank"
                         >
                             리더가 되는 방법을 확인해 보세요 &gt;
                         </a>
@@ -169,6 +170,7 @@ function Counselling() {
                         style={{
                             textDecoration: "none",
                         }}
+                        target="_blank"
                     >
                         <Item>카톡상담 바로가기</Item>
                     </a>
