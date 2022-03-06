@@ -51,72 +51,74 @@ function Introductions() {
                 paddingTop: matches ? "5vw" : "10vw",
                 paddingBottom: matches ? "5vw" : "10vw",
             }}
-            onClick={matches ? onSwiperClick : handleTouch}
-            onPointerDown={matches ? onSwiperClick : null}
         >
             <Title text="CHEER 소개" />
-            <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="mySwiper"
-                style={{
-                    marginLeft: "5vw",
-                    marginRight: "5vw",
-                    marginBottom: "2vw",
-                }}
+            <div
+                onClick={matches ? onSwiperClick : handleTouch}
+                onPointerDown={matches ? onSwiperClick : null}
             >
-                {matches
-                    ? profileInfo.map((items, index) => (
-                          <SwiperSlide key={index}>
-                              <Stack
-                                  direction="row"
-                                  spacing={"8vw"}
-                                  justifyContent="center"
-                                  alignItems="center"
-                              >
-                                  {items.map((profile, row) => (
-                                      <Profile
-                                          key={row}
-                                          profile={profile}
-                                          onClick={onClick}
-                                          opacity={opacity}
-                                          selected={selected}
-                                      />
-                                  ))}
-                              </Stack>
-                          </SwiperSlide>
-                      ))
-                    : mobileProfileInfo.map((profile, index) => (
-                          <SwiperSlide
-                              key={index}
-                              onTouchEnd={handleTouch}
-                              id={profile.name}
-                          >
-                              <Box>
-                                  <img
-                                      src={`/assets/images/main/profiles/main/${profile.name}.png`}
-                                      alt={profile.name}
-                                      style={{
-                                          width: "50vw",
-                                          marginBottom: "4vw",
-                                          borderRadius: 100,
-                                      }}
-                                      onClick={onClick}
-                                  ></img>
-                                  <div
-                                      style={{
-                                          color: "#ffffff",
-                                          fontFamily: "NanumSquareRound",
-                                          fontSize: "5vw",
-                                      }}
+                <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="mySwiper"
+                    style={{
+                        marginLeft: "5vw",
+                        marginRight: "5vw",
+                        marginBottom: "2vw",
+                    }}
+                >
+                    {matches
+                        ? profileInfo.map((items, index) => (
+                              <SwiperSlide key={index}>
+                                  <Stack
+                                      direction="row"
+                                      spacing={"8vw"}
+                                      justifyContent="center"
+                                      alignItems="center"
                                   >
-                                      {profile.summary}
-                                  </div>
-                              </Box>
-                          </SwiperSlide>
-                      ))}
-            </Swiper>
-
+                                      {items.map((profile, row) => (
+                                          <Profile
+                                              key={row}
+                                              profile={profile}
+                                              onClick={onClick}
+                                              opacity={opacity}
+                                              selected={selected}
+                                          />
+                                      ))}
+                                  </Stack>
+                              </SwiperSlide>
+                          ))
+                        : mobileProfileInfo.map((profile, index) => (
+                              <SwiperSlide
+                                  key={index}
+                                  onTouchEnd={handleTouch}
+                                  id={profile.name}
+                              >
+                                  <Box>
+                                      <img
+                                          src={`/assets/images/main/profiles/main/${profile.name}.png`}
+                                          alt={profile.name}
+                                          style={{
+                                              width: "50vw",
+                                              marginBottom: "4vw",
+                                              borderRadius: 100,
+                                          }}
+                                          onClick={onClick}
+                                      ></img>
+                                      <div
+                                          style={{
+                                              color: "#ffffff",
+                                              fontFamily: "NanumSquareRound",
+                                              fontSize: "5vw",
+                                          }}
+                                      >
+                                          {profile.summary}
+                                      </div>
+                                  </Box>
+                              </SwiperSlide>
+                          ))}
+                </Swiper>
+            </div>
             <Animate opacity={detail ? 1 : 0} translateY={detail ? 0 : -200}>
                 <div>
                     {detail ? <ProfileDetail selected={selected} /> : null}
