@@ -9,36 +9,52 @@ function Review() {
     const matches = useMediaQuery(theme.breakpoints.up("md"));
     const itemData = [
         {
-            img: "/assets/images/sub/review/img6.jpg",
-            title: "img6",
-        },
-        {
-            img: "/assets/images/sub/review/img7.jpg",
-            title: "img7",
-        },
-        {
             img: "/assets/images/sub/review/img8.jpg",
             title: "img8",
         },
         {
-            img: "/assets/images/sub/review/img1.jpg",
-            title: "img1",
-        },
-        {
-            img: "/assets/images/sub/review/img2.jpg",
-            title: "img2",
-        },
-        {
-            img: "/assets/images/sub/review/img3.jpg",
-            title: "img3",
+            img: "/assets/images/sub/review/img10.jpg",
+            title: "img10",
         },
         {
             img: "/assets/images/sub/review/img4.jpg",
             title: "img4",
         },
         {
+            img: "/assets/images/sub/review/img12.jpg",
+            title: "img12",
+        },
+        {
+            img: "/assets/images/sub/review/img6.jpg",
+            title: "img6",
+        },
+        {
+            img: "/assets/images/sub/review/img1.jpg",
+            title: "img1",
+        },
+        {
+            img: "/assets/images/sub/review/img3.jpg",
+            title: "img3",
+        },
+        {
+            img: "/assets/images/sub/review/img11.jpg",
+            title: "img11",
+        },
+        {
+            img: "/assets/images/sub/review/img7.jpg",
+            title: "img7",
+        },
+        {
             img: "/assets/images/sub/review/img5.jpg",
             title: "img5",
+        },
+        {
+            img: "/assets/images/sub/review/img9.jpg",
+            title: "img9",
+        },
+        {
+            img: "/assets/images/sub/review/img2.jpg",
+            title: "img2",
         },
     ];
 
