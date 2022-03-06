@@ -121,6 +121,7 @@ function Course({ courseObj }) {
                                 courseObj.id
                             }_schedule${matches ? "" : "_m"}.png`}
                         ></img>
+                        <div style={{ fontSize: "1rem" }}>{courseObj.text}</div>
                     </Grid>
                 </Grid>
             </Box>

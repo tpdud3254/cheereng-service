@@ -17,6 +17,7 @@ export const courseInfo = [
         theme: "yellow",
         bgColor: "#ffffff",
         badge: false,
+        text: "* Group Class는 수,금,토 중 요일 한 개 선택",
     },
     {
         id: "runner",
@@ -37,6 +38,7 @@ export const courseInfo = [
         theme: "green",
         bgColor: "#dfdfdf",
         badge: false,
+        text: "",
     },
     {
         id: "jumper",
@@ -58,5 +60,6 @@ export const courseInfo = [
         theme: "red",
         bgColor: "#ffffff",
         badge: true,
+        text: "",
     },
 ];
