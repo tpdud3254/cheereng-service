@@ -19,13 +19,12 @@ const Item = styled(Button)({
     borderRadius: 0,
     color: "#ffffff",
     fontFamily: "LeferiPoint-WhiteA",
-    opacity: 0.8,
     "&:hover": {
         background:
             "linear-gradient(-60deg, #f3f5f000 15%, #fff379 15%, #fff379 85%, #dfe8eb00 85%)",
         boxShadow: "none",
         color: "#31271c",
-        opacity: 0.7,
+        opacity: 0.9,
     },
     "&:active": {
         boxShadow: "none",
