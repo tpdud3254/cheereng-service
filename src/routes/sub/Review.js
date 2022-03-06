@@ -21,8 +21,8 @@ function Review() {
             title: "img4",
         },
         {
-            img: "/assets/images/sub/review/img12.jpg",
-            title: "img12",
+            img: "/assets/images/sub/review/img2.jpg",
+            title: "img2",
         },
         {
             img: "/assets/images/sub/review/img6.jpg",
@@ -37,8 +37,8 @@ function Review() {
             title: "img3",
         },
         {
-            img: "/assets/images/sub/review/img11.jpg",
-            title: "img11",
+            img: "/assets/images/sub/review/img12.jpg",
+            title: "img12",
         },
         {
             img: "/assets/images/sub/review/img7.jpg",
@@ -53,8 +53,8 @@ function Review() {
             title: "img9",
         },
         {
-            img: "/assets/images/sub/review/img2.jpg",
-            title: "img2",
+            img: "/assets/images/sub/review/img11.jpg",
+            title: "img11",
         },
     ];
 

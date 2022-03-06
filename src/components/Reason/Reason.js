@@ -11,11 +11,12 @@ function Reason() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/main/reason/reason_bg.png"})`,
                 backgroundSize: "contain",
                 width: "100vw",
                 paddingTop: matches ? "" : "10vw",
                 paddingBottom: matches ? "" : "10vw",
+                backgroundColor: "#000000",
+                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
             }}
         >
             {matches ? (

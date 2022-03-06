@@ -43,13 +43,7 @@ export const courseInfo = [
     {
         id: "jumper",
         courseName: "JUMPER COURSE",
-        course: [
-            "치어 관리가 들어간 1대1 외국인 회화 Class",
-            "Chatting Class 4회",
-            "1: 1 외국인 회화 Class 주 2회 25분",
-            "Acquaintance Meeting 1회",
-            "언어교환 모임 1회",
-        ],
+        course: ["치어 관리가 들어간 1대1 외국인 회화 Class"],
         courseUrl: [
             "http://cheereng.com/2#zoom",
             "http://cheereng.com/2#chatting",
