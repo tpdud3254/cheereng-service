@@ -28,6 +28,7 @@ function Introductions() {
     const onSwiperClick = () => {
         if (detail) setDetail((cur) => !cur);
     };
+
     useEffect(() => {
         if (!detail) {
             setOpacity(1);
@@ -35,6 +36,12 @@ function Introductions() {
             setOpacity(0.5);
         }
     }, [detail]);
+
+    const handleTouch = () => {
+        setSelected(
+            document.getElementsByClassName("swiper-slide-active")[0].id
+        );
+    };
 
     return (
         <Box
@@ -44,7 +51,8 @@ function Introductions() {
                 paddingTop: matches ? "5vw" : "10vw",
                 paddingBottom: matches ? "5vw" : "10vw",
             }}
-            onClick={onSwiperClick}
+            onClick={matches ? onSwiperClick : handleTouch}
+            onPointerDown={matches ? onSwiperClick : null}
         >
             <Title text="CHEER 소개" />
             <Swiper
@@ -79,7 +87,11 @@ function Introductions() {
                           </SwiperSlide>
                       ))
                     : mobileProfileInfo.map((profile, index) => (
-                          <SwiperSlide key={index}>
+                          <SwiperSlide
+                              key={index}
+                              onTouchEnd={handleTouch}
+                              id={profile.name}
+                          >
                               <Box>
                                   <img
                                       src={`/assets/images/main/profiles/main/${profile.name}.png`}

@@ -8,7 +8,6 @@ function Gallary() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
 
-    console.log(imgList);
     return (
         <Box
             sx={{
