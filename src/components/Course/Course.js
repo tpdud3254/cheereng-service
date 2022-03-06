@@ -3,10 +3,19 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useState } from "react";
 
 function Course({ courseObj }) {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+
+    const onMouseUp = (e) => {
+        e.target.style.textDecoration = "underline";
+    };
+
+    const onMouseLeave = (e) => {
+        e.target.style.textDecoration = "none";
+    };
 
     const color = {
         yellow: ["#ffd200", "#fef1abaa"],
@@ -32,7 +41,17 @@ function Course({ courseObj }) {
                             justifyContent="center"
                             alignItems="left"
                         >
-                            <Stack spacing={"1vw"} direction="row">
+                            <Stack>
+                                <div>
+                                    {courseObj.badge ? (
+                                        <img
+                                            src="/assets/images/sub/course/primeum_badge.png"
+                                            style={{
+                                                width: matches ? "" : "20vw",
+                                            }}
+                                        ></img>
+                                    ) : null}
+                                </div>
                                 <Typography
                                     variant="h3"
                                     component="div"
@@ -51,16 +70,6 @@ function Course({ courseObj }) {
                                     </span>{" "}
                                     {courseObj.courseName}
                                 </Typography>
-                                <div>
-                                    {courseObj.badge ? (
-                                        <img
-                                            src="/assets/images/sub/course/primeum_badge.png"
-                                            style={{
-                                                width: matches ? "" : "20vw",
-                                            }}
-                                        ></img>
-                                    ) : null}
-                                </div>
                             </Stack>
                             <Box
                                 sx={{
@@ -76,7 +85,11 @@ function Course({ courseObj }) {
                                     }}
                                 >
                                     {courseObj.course.map((item, index) => (
-                                        <li>
+                                        <li
+                                            key={index}
+                                            onMouseOver={onMouseUp}
+                                            onMouseOut={onMouseLeave}
+                                        >
                                             <a
                                                 href={
                                                     courseObj.courseUrl[index]

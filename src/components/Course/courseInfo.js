@@ -3,10 +3,10 @@ export const courseInfo = [
         id: "walker",
         courseName: "WALKER COURSE (인원 5~6명)",
         course: [
-            "Group class 40분, 2회 (cheating, 게임, 레벨인식)",
-            "Zoom Group Class 1회",
-            "Chat Class 1회",
-            "Outing Class (비용별도)",
+            "Group Class 40분 월 2회",
+            "Zoom Class 월 1회",
+            "Chatting Class 주 1회",
+            "Outing Class 월 1회 (비용 별도)",
         ],
         courseUrl: [
             "http://cheereng.com/2#group",
@@ -22,11 +22,10 @@ export const courseInfo = [
         id: "runner",
         courseName: "RUNNER COURSE (인원 5~6명)",
         course: [
-            "Zoom Group Class 1회",
-            "Chatting Class 4회",
-            "1: 1 외국인 회화 Class 주 2회 25분",
-            "Acquaintance Meeting 1회",
-            "언어교환 모임 1회",
+            "1 : 1 외국인 회화 Class 주2회 25분",
+            "Chatting Class 주 1회",
+            "Networking 모임 월 2회",
+            "Outing Class 월 1회 (비용 별도)",
         ],
         courseUrl: [
             "http://cheereng.com/2#zoom",
@@ -43,7 +42,7 @@ export const courseInfo = [
         id: "jumper",
         courseName: "JUMPER COURSE",
         course: [
-            "Zoom Group Class 1회",
+            "치어 관리가 들어간 1대1 외국인 회화 Class",
             "Chatting Class 4회",
             "1: 1 외국인 회화 Class 주 2회 25분",
             "Acquaintance Meeting 1회",
