@@ -44,11 +44,11 @@ export const profileInfo = [
             kakao: "http://pf.kakao.com/_ZWfxib",
         },
         {
-            summary: "말썽쟁이 Wesley",
+            summary: "장난꾸러기 Wesley",
             name: "Wesley",
             mbti: "ENFP",
             greeting:
-                "공부보다는 노는걸 좋아하는 말썽쟁이 Wesley🙈\n딱딱한 영어는 이제 그만!!\n다양한 게임과 함께 하는 즐거운 놀이터~\n웨쓸리의 스터디에 여러분들을 초대합니다😊",
+                "공부보다는 노는걸 좋아하는 장난꾸러기 Wesley🙈\n딱딱한 영어는 이제 그만!!\n다양한 게임과 함께 하는 즐거운 놀이터~\n웨쓸리의 스터디에 여러분들을 초대합니다😊",
             kakao: "https://open.kakao.com/o/syTQX02d",
         },
     ],
@@ -106,11 +106,11 @@ export const mobileProfileInfo = [
         kakao: "http://pf.kakao.com/_ZWfxib",
     },
     {
-        summary: "말썽쟁이 Wesley",
+        summary: "장난꾸러기 Wesley",
         name: "Wesley",
         mbti: "ENFP",
         greeting:
-            "공부보다는 노는걸 좋아하는 말썽쟁이 Wesley🙈\n딱딱한 영어는 이제 그만!!\n다양한 게임과 함께 하는 즐거운 놀이터~\n웨쓸리의 스터디에 여러분들을 초대합니다😊",
+            "공부보다는 노는걸 좋아하는 장난꾸러기 Wesley🙈\n딱딱한 영어는 이제 그만!!\n다양한 게임과 함께 하는 즐거운 놀이터~\n웨쓸리의 스터디에 여러분들을 초대합니다😊",
         kakao: "https://open.kakao.com/o/syTQX02d",
     },
     {
