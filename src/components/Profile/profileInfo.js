@@ -21,7 +21,7 @@ export const profileInfo = [
             name: "Hoon",
             mbti: "ISFP",
             greeting:
-                "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
+                "재미=영어가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
             kakao: "https://open.kakao.com/o/sp9hP02d",
         },
     ],
@@ -86,7 +86,7 @@ export const mobileProfileInfo = [
         name: "Hoon",
         mbti: "ISFP",
         greeting:
-            "재미=영어 가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
+            "재미=영어가 될 수 있을까요?\n제가 보여드릴게요!!\n재미 뒤에 영어가 따라오는 모습을!!\n언제나 활기찬 Hoon’s class 준비돼있습니다.",
         kakao: "https://open.kakao.com/o/sp9hP02d",
     },
     {
