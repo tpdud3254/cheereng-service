@@ -36,7 +36,7 @@ function ReasonItem({ title, text, imgUrl, id }) {
                 sx={{
                     color: "#ffffff",
                     fontFamily: "S-CoreDream-3Light",
-                    fontSize: "3vw",
+                    fontSize: "3.5vw",
                     padding: 3,
                 }}
             >

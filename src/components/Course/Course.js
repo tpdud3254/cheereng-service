@@ -89,6 +89,12 @@ function Course({ courseObj }) {
                                             key={index}
                                             onMouseOver={onMouseUp}
                                             onMouseOut={onMouseLeave}
+                                            style={{
+                                                fontFamily: "NanumSquare",
+                                                fontSize: matches
+                                                    ? "1.5vw"
+                                                    : "4vw",
+                                            }}
                                         >
                                             <a
                                                 href={
@@ -121,7 +127,9 @@ function Course({ courseObj }) {
                                 courseObj.id
                             }_schedule${matches ? "" : "_m"}.png`}
                         ></img>
-                        <div style={{ fontSize: "1rem" }}>{courseObj.text}</div>
+                        <div style={{ fontSize: matches ? "1rem" : "0.8rem" }}>
+                            {courseObj.text}
+                        </div>
                     </Grid>
                 </Grid>
             </Box>

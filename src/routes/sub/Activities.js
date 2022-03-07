@@ -24,7 +24,8 @@ function Activities() {
         boxShadow: "none",
         textTransform: "none",
         fontSize: matches ? "1.3vw" : "3vw",
-        height: matches ? "2.8vw" : "6vw",
+        lineHeight: matches ? "unset" : "1.2",
+        height: matches ? "2.8vw" : "8vw",
         textAlign: "center",
         backgroundColor: "#dcbf8b",
         color: "#fdfbf8",
@@ -50,7 +51,7 @@ function Activities() {
             >
                 <Box sx={{ backgroundColor: "#f1f1f1" }}>
                     <Stack
-                        spacing={"3vw"}
+                        spacing={matches ? "3vw" : "2vw"}
                         direction="row"
                         justifyContent="center"
                         alignItems="center"

@@ -12,7 +12,7 @@ function WhyCheerEng() {
             <img
                 src="/assets/images/main/whycheereng/whycheereng.png"
                 style={{
-                    width: matches ? "38vw" : "80vw",
+                    width: matches ? "38vw" : "90vw",
                     padding: matches ? "" : "3vw",
                 }}
             ></img>

@@ -11,7 +11,7 @@ function Reason() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundSize: "contain",
+                backgroundSize: matches ? "contain" : "auto",
                 width: "100vw",
                 paddingTop: matches ? "" : "10vw",
                 paddingBottom: matches ? "" : "10vw",

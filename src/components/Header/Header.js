@@ -158,8 +158,9 @@ function Header() {
                                         >
                                             <img
                                                 style={{
-                                                    width: "15vw",
+                                                    width: "20vw",
                                                     padding: 10,
+                                                    paddingTop: 15,
                                                 }}
                                                 src="/assets/images/common/logo/logo_small.png"
                                             ></img>

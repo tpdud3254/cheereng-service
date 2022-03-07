@@ -5,7 +5,7 @@ export const profileInfo = [
             name: "Dauny",
             mbti: "ESTJ",
             greeting:
-                "안녕하세요 Cheer Dauny 입니다~ㅎ/n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
+                "안녕하세요 Cheer Dauny 입니다~ㅎ\n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
             kakao: "https://open.kakao.com/o/sVBiLZ2d",
         },
         {
@@ -70,7 +70,7 @@ export const mobileProfileInfo = [
         name: "Dauny",
         mbti: "ESTJ",
         greeting:
-            "안녕하세요 Cheer Dauny 입니다~ㅎ/n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
+            "안녕하세요 Cheer Dauny 입니다~ㅎ\n공부와 재미! 두마리의 토끼를 잡고 싶으시다면 망설이지 마시고 바로 신청해주세요~!\n재미 한스푼 유익함 두스푼 넣은 Dauny만의 스터디에 초대합니다!",
         kakao: "https://open.kakao.com/o/sVBiLZ2d",
     },
     {
