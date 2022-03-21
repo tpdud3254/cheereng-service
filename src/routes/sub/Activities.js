@@ -64,7 +64,7 @@ function Activities() {
                                 href={`#${item.id}`}
                                 style={{ textDecoration: "none" }}
                             >
-                                <Item key={item.title}>{item.title}</Item>
+                                <Item key={item.button}>{item.button}</Item>
                             </a>
                         ))}
                     </Stack>

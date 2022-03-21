@@ -1,5 +1,5 @@
-import { Box, Typography, Stack, Grid } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Typography, Stack, Grid, Button } from "@mui/material";
+
 import Paper from "@mui/material/Paper";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -87,8 +87,16 @@ function Course({ courseObj }) {
                                     {courseObj.course.map((item, index) => (
                                         <li
                                             key={index}
-                                            onMouseOver={onMouseUp}
-                                            onMouseOut={onMouseLeave}
+                                            onMouseOver={
+                                                courseObj.id === "jumper"
+                                                    ? onMouseUp
+                                                    : null
+                                            }
+                                            onMouseOut={
+                                                courseObj.id === "jumper"
+                                                    ? onMouseLeave
+                                                    : null
+                                            }
                                             style={{
                                                 fontFamily: "NanumSquare",
                                                 fontSize: matches
@@ -98,18 +106,37 @@ function Course({ courseObj }) {
                                         >
                                             <a
                                                 href={
-                                                    courseObj.courseUrl[index]
+                                                    courseObj.id === "jumper"
+                                                        ? courseObj.courseUrl[
+                                                              index
+                                                          ]
+                                                        : null
                                                 }
                                                 style={{
                                                     textDecoration: "none",
                                                     color: "#000000",
-                                                    cursor: "pointer",
+                                                    cursor:
+                                                        courseObj.id ===
+                                                        "jumper"
+                                                            ? "pointer"
+                                                            : null,
                                                 }}
                                             >
                                                 {item}
                                             </a>
                                         </li>
                                     ))}
+                                    {courseObj.id === "jumper"
+                                        ? courseObj.courseDetail.map((item) => (
+                                              <li
+                                                  style={{
+                                                      listStyleType: "none",
+                                                  }}
+                                              >
+                                                  - {item}
+                                              </li>
+                                          ))
+                                        : ""}
                                 </ul>
                             </Box>
                         </Stack>

@@ -13,32 +13,42 @@ function BottomBar() {
                 width: "100vw",
             }}
         >
-            <Toolbar>
-                <Box
-                    sx={{
-                        textAlign: "center",
-                        fontFamily: "GyeonggiTitleM",
-                        fontSize: "5vw",
-                        width: "100%",
-                    }}
-                >
-                    <Stack
-                        spacing={"2vw"}
-                        direction="row"
-                        justifyContent="center"
-                        alignItems="center"
+            <a
+                href="http://pf.kakao.com/_ZWfxib"
+                style={{
+                    textDecoration: "none",
+                    color: "#ffffff",
+                    cursor: "pointer",
+                }}
+                target="_blank"
+            >
+                <Toolbar>
+                    <Box
+                        sx={{
+                            textAlign: "center",
+                            fontFamily: "GyeonggiTitleM",
+                            fontSize: "5vw",
+                            width: "100%",
+                        }}
                     >
-                        <img
-                            style={{
-                                width: "7vw",
-                                opacity: 0.9,
-                            }}
-                            src="/assets/images/common/kakao.png"
-                        ></img>
-                        <span>카톡상담 바로가기</span>
-                    </Stack>
-                </Box>
-            </Toolbar>
+                        <Stack
+                            spacing={"2vw"}
+                            direction="row"
+                            justifyContent="center"
+                            alignItems="center"
+                        >
+                            <img
+                                style={{
+                                    width: "7vw",
+                                    opacity: 0.9,
+                                }}
+                                src="/assets/images/common/kakao.png"
+                            ></img>
+                            <span>카톡상담 바로가기</span>
+                        </Stack>
+                    </Box>
+                </Toolbar>
+            </a>
         </AppBar>
     );
 }

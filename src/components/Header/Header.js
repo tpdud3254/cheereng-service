@@ -94,13 +94,11 @@ function Header() {
                     <Box
                         sx={{
                             textAlign: "center",
-                            height: 200,
-                            backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
-                            width: "100vw",
+                            backgroundImage: `url(${"/assets/images/common/brick_bg2.png"})`,
                         }}
                     >
                         <Link to={`/`}>
-                            <img src="/assets/images/common/logo/logo.png"></img>
+                            <img src="/assets/images/common/logo/logo2.png"></img>
                         </Link>
                     </Box>
                     <NavBar items={items} />
@@ -113,7 +111,7 @@ function Header() {
                     >
                         <Toolbar>
                             <Grid container>
-                                <Grid item xs={4}>
+                                <Grid item xs={2}>
                                     <IconButton
                                         size="large"
                                         edge="start"
@@ -144,7 +142,7 @@ function Header() {
                                         {list(anchor)}
                                     </Drawer>
                                 </Grid>
-                                <Grid item xs={4}>
+                                <Grid item xs={8}>
                                     <Box
                                         sx={{
                                             textAlign: "center",
@@ -158,11 +156,11 @@ function Header() {
                                         >
                                             <img
                                                 style={{
-                                                    width: "20vw",
+                                                    width: "40vw",
                                                     padding: 10,
                                                     paddingTop: 15,
                                                 }}
-                                                src="/assets/images/common/logo/logo_small.png"
+                                                src="/assets/images/common/logo/logo_small2.png"
                                             ></img>
                                             {/* <Typography
                                                 component="div"
@@ -181,7 +179,7 @@ function Header() {
                                         </Link>
                                     </Box>
                                 </Grid>
-                                <Grid item xs={4}></Grid>
+                                <Grid item xs={2}></Grid>
                             </Grid>
                         </Toolbar>
                     </AppBar>

@@ -48,6 +48,23 @@ function Banner() {
                     </Link>
                 }
             />
+            <div
+                style={{
+                    width: "100vw",
+                    margin: matches ? "1vw auto" : "",
+                    textAlign: "center",
+                }}
+                children={
+                    <Link to={`/3`} style={{ textDecoration: "none" }}>
+                        <img
+                            src={`/assets/images/main/banner/Banner3_2${
+                                matches ? "" : "_m"
+                            }.png`}
+                            style={{ width: matches ? "83%" : "99%" }}
+                        ></img>
+                    </Link>
+                }
+            />
         </AwesomeSlider>
     );
 }

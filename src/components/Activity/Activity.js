@@ -39,22 +39,47 @@ function Activity({ obj, index }) {
             </Typography>
 
             {matches ? (
-                <ImageList
-                    sx={{
+                <Stack
+                    style={{
                         backgroundColor:
                             index % 2 === 0 ? "#f1f1f1" : "#ffffff",
                         padding: "1vw",
+                        fontSize: "3rem",
+                        fontFamily: "GyeonggiTitleM",
                     }}
-                    variant="woven"
-                    cols={3}
-                    gap={3}
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
                 >
-                    {activitiesInfo[index].url.map((item, index) => (
-                        <ImageListItem key={item}>
-                            <img src={item} alt={index} />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
+                    <a
+                        href="https://www.instagram.com/cheereng_/"
+                        target="_blank"
+                        style={{ textDecoration: "none", color: "#000000" }}
+                    >
+                        &lt;
+                    </a>
+                    <ImageList
+                        sx={{
+                            padding: "1vw",
+                        }}
+                        variant="woven"
+                        cols={3}
+                        gap={10}
+                    >
+                        {activitiesInfo[index].url.map((item, index) => (
+                            <ImageListItem key={item}>
+                                <img src={item} alt={index} />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <a
+                        href="https://www.instagram.com/cheereng_/"
+                        target="_blank"
+                        style={{ textDecoration: "none", color: "#000000" }}
+                    >
+                        &gt;
+                    </a>
+                </Stack>
             ) : (
                 <Stack
                     spacing={"3vw"}
@@ -70,6 +95,18 @@ function Activity({ obj, index }) {
                             }}
                         />
                     ))}
+
+                    <a
+                        href="https://www.instagram.com/cheereng_/"
+                        target="_blank"
+                        style={{
+                            textDecoration: "none",
+                            color: "#000000",
+                            fontSize: "2rem",
+                        }}
+                    >
+                        +
+                    </a>
                 </Stack>
             )}
 

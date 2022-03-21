@@ -43,17 +43,28 @@ function Gallary() {
                         ))}
                     </ImageList>
                 ) : (
-                    <ImageList variant="masonry" cols={2} gap={5}>
-                        {mobileImgList.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                    loading="lazy"
-                                    src={item.img}
-                                    alt={item.title}
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
+                    <div>
+                        <ImageList variant="masonry" cols={2} gap={5}>
+                            {mobileImgList.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                        loading="lazy"
+                                        src={item.img}
+                                        alt={item.title}
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>{" "}
+                        <a
+                            href="https://www.instagram.com/cheereng_/"
+                            target="_blank"
+                        >
+                            <img
+                                style={{ margin: "0.5vw", width: "5vw" }}
+                                src="/assets/images/common/arrow.png"
+                            />
+                        </a>
+                    </div>
                 )}
             </Box>
         </Box>

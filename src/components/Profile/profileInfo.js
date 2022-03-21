@@ -61,6 +61,32 @@ export const profileInfo = [
                 "Hi there.\n주어+동사+목적어로 시작해 결국 유창하게 말하는 비결!\nCheer Michelle과 함께 자유롭게 영어를 배우는 새로운 방법을 경험하세요! Welcome!",
             kakao: "https://open.kakao.com/o/galD2Z2d",
         },
+        {
+            summary: "털털비타민 Rainny",
+            name: "Rainny",
+            mbti: "ENFJ",
+            greeting:
+                "시간이 너무 아깝다구요? 효율적으로 보내고 싶다구요?\n수업은 재미있게! 시간은 효율적이게!\n두 마리 토끼를 전부 잡아드립니다",
+            kakao: "https://open.kakao.com/o/s5ItUk6d",
+        },
+        {
+            summary: "친화력갑 Hena!",
+            name: "Hena",
+            mbti: "ESFJ",
+            greeting:
+                "지금까지 불편하기만 했던 영어! 저와 함께 10년지기 친구처럼 즐겁고 편안하게 영어로 대화해요~\n\nIt’s time to change from ordinary to extraordinary!\n우리 삶의 영어를 더함으로 평범함에서 특별함으로 바꿔보아요!",
+            kakao: "https://open.kakao.com/o/sbKRns6d",
+        },
+    ],
+    [
+        {
+            summary: "영어 드루와 Jimmy",
+            name: "Jimmy",
+            mbti: "ENFP",
+            greeting:
+                "친한 친구처럼 또는 매니저처럼\n옆에서 영어에 흥미 잃지않도록 도와드릴게요!\n저와 같이 영어 실력 업그레이드 해볼까요?",
+            kakao: "https://open.kakao.com/o/sXxdIT3d",
+        },
     ],
 ];
 
@@ -120,5 +146,29 @@ export const mobileProfileInfo = [
         greeting:
             "Hi there.\n주어+동사+목적어로 시작해 결국 유창하게 말하는 비결!\nCheer Michelle과 함께 자유롭게 영어를 배우는 새로운 방법을 경험하세요! Welcome!",
         kakao: "https://open.kakao.com/o/galD2Z2d",
+    },
+    {
+        summary: "털털비타민 Rainny",
+        name: "Rainny",
+        mbti: "ENFJ",
+        greeting:
+            "시간이 너무 아깝다구요? 효율적으로 보내고 싶다구요?\n수업은 재미있게! 시간은 효율적이게!\n두 마리 토끼를 전부 잡아드립니다",
+        kakao: "https://open.kakao.com/o/s5ItUk6d",
+    },
+    {
+        summary: "친화력갑 Hena!",
+        name: "Hena",
+        mbti: "ESFJ",
+        greeting:
+            "지금까지 불편하기만 했던 영어! 저와 함께 10년지기 친구처럼 즐겁고 편안하게 영어로 대화해요~\n\nIt’s time to change from ordinary to extraordinary!\n우리 삶의 영어를 더함으로 평범함에서 특별함으로 바꿔보아요!",
+        kakao: "https://open.kakao.com/o/sbKRns6d",
+    },
+    {
+        summary: "영어 드루와 Jimmy",
+        name: "Jimmy",
+        mbti: "ENFP",
+        greeting:
+            "친한 친구처럼 또는 매니저처럼\n옆에서 영어에 흥미 잃지않도록 도와드릴게요!\n저와 같이 영어 실력 업그레이드 해볼까요?",
+        kakao: "https://open.kakao.com/o/sXxdIT3d",
     },
 ];

@@ -32,6 +32,17 @@ const answer = [
     "모임은 보통 6~8명으로 진행됩니다.",
 ];
 
+const mobileAnswer = [
+    "Welcome :) 왕초보, 왕왕초보, 알파벳만 읽을 줄 아시면 모두 다 가능합니다. 치어들이 잘 안내해드릴테니 걱정말고 오세요!",
+    "Group Class, Chatting Class, Party, Zoom Class, Outing Class 여러가지 다양한 활동들로 진행을 하고 있습니다.\n자세한 사항은 치어에게 문의 해주세요.",
+    "네! 아직은 서울에서만 진행하지만 경기도\n수원, 천안에도 오픈 준비중에 있습니다.",
+    "외국인 친구들과 함께 벚꽃구경, 한강나들이, 맛집투어 등등 시즌에 맞게 진행됩니다.",
+    "Outing Class는 1달에 한 번,\nParty는 분기 별로 진행됩니다.",
+    "그룹수업 요일은 변경가능합니다. 다른 수업은 치어에게 문의 부탁드립니다.",
+    "19세 이상 성인이라면 누구든지 가능합니다.",
+    "모임은 보통 6~8명으로 진행됩니다.",
+];
+
 function Faqs() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -145,7 +156,18 @@ function Faqs() {
                                     borderLeft: "2px solid #c72117",
                                 }}
                             >
-                                {answer[index]}
+                                {matches
+                                    ? answer[index]
+                                    : mobileAnswer[index]
+                                          .split("\n")
+                                          .map((line, i) => {
+                                              return (
+                                                  <span key={i}>
+                                                      {line}
+                                                      <br />
+                                                  </span>
+                                              );
+                                          })}
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
