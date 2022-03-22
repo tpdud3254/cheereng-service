@@ -70,11 +70,11 @@ export const classInfo = [
         content: "치얼잉글리쉬 매달 1번 여행 정기모임",
     },
     {
-        className: "chatting class",
+        className: "Chatting class",
         content: "그룹수업 전 채팅을 통한 예습 공부",
     },
     {
-        className: "party",
+        className: "Party",
         content:
             "멋진 사람들, 멋진 공간, 멋진 분위기 다양한 사람들과 색다른 경험",
     },

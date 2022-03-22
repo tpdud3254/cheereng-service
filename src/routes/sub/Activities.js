@@ -33,7 +33,7 @@ function Activities() {
         "&:hover": {
             backgroundColor: "#dcbf8b",
             boxShadow: "none",
-            color: "#31271c",
+            color: matches ? "#31271c" : "#fdfbf8",
             opacity: 0.7,
         },
     });
