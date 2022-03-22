@@ -158,18 +158,11 @@ function Review() {
     ];
 
     const [resultArr, setResultArr] = useState([]);
+    const [sorted, setSorted] = useState(false);
 
     useEffect(() => {
         const dataArr = [];
         setResultArr([]);
-
-        // for (let i = 0; i < 37; i++) {
-        //     itemData.push({
-        //         img: `/assets/images/sub/review/img${i + 1}.jpg`,
-        //         title: `img${i + 1}`,
-        //     });
-        // }
-        // console.log(itemData);
 
         itemData2.forEach((item, index) => {
             const img = new Image();
@@ -221,10 +214,11 @@ function Review() {
                     ]);
 
                     console.log(dataArr[index]);
+                    if (index === dataArr.length - 1) {
+                        setSorted(true);
+                    }
                 }
             }
-
-            console.log(resultArr);
         }
     }, []);
 
@@ -282,26 +276,28 @@ function Review() {
                     cols={matches ? 3 : 1}
                     gap={matches ? 10 : 50}
                 >
-                    {resultArr.map((item, index) => (
-                        <ImageListItem key={item.src}>
-                            {matches ? null : (
-                                <ImageListItemBar
-                                    position="below"
-                                    title={`0${index + 1}`}
-                                    sx={{
-                                        color: "#ffc438",
-                                        fontFamily: "Cafe24Ssurround",
-                                        fontSize: "10vw",
-                                    }}
-                                />
-                            )}
-                            <img
-                                src={item.src}
-                                alt={item.title}
-                                sx={{ objectFit: "contain" }}
-                            />
-                        </ImageListItem>
-                    ))}
+                    {sorted
+                        ? resultArr.map((item, index) => (
+                              <ImageListItem key={item.src}>
+                                  {matches ? null : (
+                                      <ImageListItemBar
+                                          position="below"
+                                          title={`0${index + 1}`}
+                                          sx={{
+                                              color: "#ffc438",
+                                              fontFamily: "Cafe24Ssurround",
+                                              fontSize: "10vw",
+                                          }}
+                                      />
+                                  )}
+                                  <img
+                                      src={item.src}
+                                      alt={item.title}
+                                      sx={{ objectFit: "contain" }}
+                                  />
+                              </ImageListItem>
+                          ))
+                        : null}
                 </ImageList>
             </Box>
         </Box>
