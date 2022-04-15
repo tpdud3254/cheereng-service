@@ -10,12 +10,11 @@ function Title({ text, textColor, textSize, bottom, fontFamily }) {
     };
     return (
         <Typography
-            variant="h5"
             component="div"
             sx={{
                 color: textColor ? textColor : "#ffffff",
                 fontFamily: fontFamily ? fontFamily : "SEBANG_Gothic_Bold",
-                fontSize: textSize ? textSize : matches ? "1.6vw" : "6vw",
+                fontSize: textSize ? textSize : "1.5rem",
                 paddingBottom: bottom ? bottom : matches ? "4vw" : "6vw",
             }}
         >

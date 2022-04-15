@@ -1,21 +1,22 @@
-import { Box, Stack, Avatar } from "@mui/material";
 import Profile from "./Profile";
 import Title from "../Title/Title";
-import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { profileInfo, mobileProfileInfo } from "./profileInfo";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import ProfileDetail from "./ProfileDetail";
-import { Navigation } from "swiper";
 import { Animate } from "react-rebound";
+import { Box, Stack } from "@mui/material";
+import ProfileDetail from "./ProfileDetail";
+import { useTheme } from "@mui/material/styles";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { profileInfo, mobileProfileInfo } from "./profileInfo";
 
 import "swiper/css";
+import { Navigation } from "swiper";
 import "swiper/css/navigation";
 
 function Introductions() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+
     const [detail, setDetail] = useState(false);
     const [selected, setSelected] = useState("");
     const [opacity, setOpacity] = useState(1);

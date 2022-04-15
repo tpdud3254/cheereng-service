@@ -9,9 +9,6 @@ function Banner() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
 
-    function Div() {
-        return <div style={{ width: 100, height: 100 }}>dfhaklsdfhlaksdf</div>;
-    }
     return (
         <AwesomeSlider bullets={false} fillParent={false} className="aws-btn">
             <div

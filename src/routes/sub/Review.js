@@ -197,6 +197,7 @@ function Review() {
     const [sorted, setSorted] = useState(false);
 
     useEffect(() => {
+        //활동리뷰에 이미지들의 크기가 각각 달라 페이지의 마지막 부분에서 최대한 크기가 맞을 수 있도록 함 (요청사항)
         const dataArr = [];
         setResultArr([]);
 

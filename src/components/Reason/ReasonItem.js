@@ -8,7 +8,7 @@ function ReasonItem({ title, text, imgUrl, id }) {
                 sx={{
                     color: "#fff379",
                     fontFamily: "ROKAFSansBold",
-                    fontSize: "7vw",
+                    fontSize: "1.8rem",
                 }}
             >
                 0{id + 1}

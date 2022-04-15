@@ -1,21 +1,24 @@
-import { Box, Typography, Stack } from "@mui/material";
-import { mobileProfileInfo as profiles } from "./profileInfo";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import "../../css/font.css";
+import { useTheme } from "@mui/material/styles";
+import ImageList from "@mui/material/ImageList";
+import { Box, Typography, Stack } from "@mui/material";
+import ImageListItem from "@mui/material/ImageListItem";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { mobileProfileInfo as profiles } from "./profileInfo";
 
 function ProfileDetail({ selected }) {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+
     let profile = {};
     const arr = [1, 2, 3, 4];
+
     profiles.forEach((e) => {
         if (selected == e.name) {
             profile = e;
         }
     });
+
     return (
         <Box
             sx={{
@@ -41,7 +44,7 @@ function ProfileDetail({ selected }) {
                             sx={{
                                 color: "#ffffff",
                                 fontFamily: "SEBANG_Gothic_Bold",
-                                fontSize: matches ? "1.5vw" : "4.5vw",
+                                fontSize: matches ? "1.3rem" : "1.1rem",
                             }}
                         >
                             <span style={{ color: "#00ffd8" }}>|</span>&nbsp;
@@ -65,7 +68,7 @@ function ProfileDetail({ selected }) {
                         sx={{
                             color: "#ffffff",
                             fontFamily: "S-CoreDream-3Light",
-                            fontSize: matches ? "1vw" : "3.5vw",
+                            fontSize: "0.9rem",
                         }}
                     >
                         {profile.greeting.split("\n").map((line, i) => {

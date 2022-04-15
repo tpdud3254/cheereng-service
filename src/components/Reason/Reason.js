@@ -1,11 +1,13 @@
+import ReasonItem from "./ReasonItem";
+import { reasonInfo } from "./reasonInfo";
 import { Box, Stack } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { reasonInfo } from "./reasonInfo";
-import ReasonItem from "./ReasonItem";
+
 function Reason() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+
     return (
         <Box
             sx={{
