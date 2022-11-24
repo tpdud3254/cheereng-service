@@ -55,6 +55,13 @@ function Footer() {
                 }}
             >
                 <a
+                    href="https://www.flaticon.com/free-icons/character-design"
+                    title="character design icons"
+                >
+                    Character design icons created by shohanur.rahman13 -
+                    Flaticon
+                </a>
+                <a
                     href="https://www.flaticon.com/free-icons/female-cheerleader"
                     title="female cheerleader icons"
                 >
