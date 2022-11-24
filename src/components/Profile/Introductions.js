@@ -22,11 +22,16 @@ function Introductions() {
     const [opacity, setOpacity] = useState(1);
 
     const onClick = (e) => {
-        if (selected !== e.target.alt) {
+        if (matches) {
+            if (selected !== e.target.alt) {
+                setDetail((cur) => !cur);
+                setSelected(e.target.alt);
+            } else {
+                setSelected("");
+            }
+        } else {
             setDetail((cur) => !cur);
             setSelected(e.target.alt);
-        } else {
-            setSelected("");
         }
     };
 
