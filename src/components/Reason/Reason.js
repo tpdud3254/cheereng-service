@@ -17,19 +17,24 @@ function Reason() {
                 width: "100vw",
                 paddingTop: matches ? "" : "10vw",
                 paddingBottom: matches ? "" : "10vw",
-                backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.jpg"})`,
             }}
         >
             {matches ? (
-                <img
-                    loading="lazy"
-                    src="/assets/images/main/reason/reason.png"
-                    style={{
-                        width: "80%",
-                        margin: "6vw",
-                    }}
-                ></img>
+                <picture>
+                    <source
+                        type="image/webp"
+                        srcSet="/assets/images/main/reason/reason.webp"
+                    />
+                    <img
+                        src="/assets/images/main/reason/reason.png"
+                        style={{
+                            width: "80%",
+                            margin: "6vw",
+                        }}
+                        alt="reason"
+                    />
+                </picture>
             ) : (
                 <Stack
                     spacing={"10vw"}
@@ -43,6 +48,7 @@ function Reason() {
                             width: "70vw",
                             margin: matches ? "6vw" : "",
                         }}
+                        alt="reason"
                     ></img>
 
                     {reasonInfo.map((item, index) => (

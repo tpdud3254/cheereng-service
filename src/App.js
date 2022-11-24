@@ -14,10 +14,16 @@ import BottomBar from "./components/BottomBar/BottomBar";
 
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { lazy, useEffect } from "react";
+import Video from "./components/Video/Video";
 
 function App() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
+
+    useEffect(() => {
+        lazy(() => Video);
+    }, []);
 
     return (
         <div>

@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, Grid } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
@@ -145,7 +145,7 @@ function Footer() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                // backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                // backgroundImage: `url(${"/assets/images/common/brick_bg.jpg"})`,
                 width: "100vw",
                 marginBottom: matches ? "" : "16vw",
             }}
@@ -162,6 +162,7 @@ function Footer() {
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
                         style={{ width: "9vw" }}
+                        alt="logo"
                     ></img>
 
                     <Stack>
@@ -214,6 +215,7 @@ function Footer() {
                         loading="lazy"
                         src="/assets/images/common/logo/logo_small.png"
                         style={{ width: "17vw", margin: "3vw" }}
+                        alt="logo"
                     ></img>
                     {info.map((item, index) => (
                         <Item key={index} text={item} />

@@ -14,7 +14,7 @@ function ProfileDetail({ selected }) {
     const arr = [1, 2, 3, 4];
 
     profiles.forEach((e) => {
-        if (selected == e.name) {
+        if (selected === e.name) {
             profile = e;
         }
     });
@@ -51,13 +51,18 @@ function ProfileDetail({ selected }) {
                             {profile.name} &nbsp;/&nbsp;&nbsp;
                             {profile.mbti} &nbsp;/&nbsp;&nbsp;
                         </Typography>
-                        <a href={profile.kakao} target="_blank">
+                        <a
+                            href={profile.kakao}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img
                                 style={{
                                     width: matches ? "2.2vw" : "6vw",
                                     paddingBottom: matches ? "0.5vw" : "",
                                 }}
                                 src="/assets/images/common/kakao.png"
+                                alt="kakao"
                             ></img>
                         </a>
                     </Stack>
@@ -88,23 +93,31 @@ function ProfileDetail({ selected }) {
                             alignItems="center"
                         >
                             {arr.map((item, index) => (
-                                <img
-                                    src={`/assets/images/main/profiles/sub/${
-                                        profile.name
-                                    }${index + 1}.png`}
-                                    style={{ width: "20%" }}
-                                    key={index}
-                                ></img>
+                                <picture key={index} style={{ width: "20%" }}>
+                                    <source
+                                        type="image/webp"
+                                        srcSet={`/assets/images/main/profiles/sub/${
+                                            profile.name
+                                        }${index + 1}.webp`}
+                                    />
+                                    <img
+                                        src={`/assets/images/main/profiles/sub/${
+                                            profile.name
+                                        }${index + 1}.jpg`}
+                                        style={{ width: "100%" }}
+                                        alt={profile.name}
+                                    />
+                                </picture>
                             ))}
                         </Stack>
                     ) : (
                         <ImageList cols={2}>
                             {arr.map((item, index) => (
-                                <ImageListItem key={item.img}>
+                                <ImageListItem key={index}>
                                     <img
                                         src={`/assets/images/main/profiles/sub/${
                                             profile.name
-                                        }${index + 1}.png`}
+                                        }${index + 1}.jpg`}
                                         alt={index}
                                         loading="lazy"
                                     />

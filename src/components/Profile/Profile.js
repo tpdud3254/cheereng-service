@@ -14,7 +14,7 @@ function Profile({ profile, onClick, opacity, selected }) {
         >
             <Avatar
                 alt={name}
-                src={`/assets/images/main/profiles/main/${name}.png`}
+                src={`/assets/images/main/profiles/main/${name}.jpg`}
                 sx={{
                     width: "15vw",
                     height: "15vw",

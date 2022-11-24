@@ -28,7 +28,7 @@ function Counselling() {
                 sx={{
                     textAlign: "center",
                     backgroundColor: "#ffffff",
-                    backgroundImage: `url(${"/assets/images/main/counselling/counselling.png"})`,
+                    backgroundImage: `url(${"/assets/images/main/counselling/counselling.jpg"})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     padding: "7vw",
@@ -79,6 +79,7 @@ function Counselling() {
                                 cursor: "pointer",
                             }}
                             target="_blank"
+                            rel="noreferrer"
                         >
                             리더가 되는 방법을 확인해 보세요 &gt;
                         </a>
@@ -162,6 +163,7 @@ function Counselling() {
                 <img
                     style={{ margin: "0.5vw", width: "3vw" }}
                     src="/assets/images/common/arrow.png"
+                    alt="arrow"
                 ></img>
 
                 <div>
@@ -171,6 +173,7 @@ function Counselling() {
                             textDecoration: "none",
                         }}
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <Item>카톡상담 바로가기</Item>
                     </a>

@@ -3,7 +3,7 @@ import Title from "../Title/Title";
 import { imgList, mobileImgList } from "./imageList";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useEffect } from "react";
+
 function Gallary() {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -58,10 +58,12 @@ function Gallary() {
                         <a
                             href="https://www.instagram.com/cheereng_/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img
                                 style={{ margin: "0.5vw", width: "5vw" }}
                                 src="/assets/images/common/arrow.png"
+                                alt="arrow"
                             />
                         </a>
                     </div>

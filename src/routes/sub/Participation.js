@@ -73,6 +73,7 @@ function Participation() {
                         <img
                             src="/assets/images/sub/partification/partification_m.png"
                             style={{ width: "100vw", opacity: 0.9 }}
+                            alt="partification"
                         ></img>
                     )}
 
@@ -133,6 +134,7 @@ function Participation() {
                             textDecoration: "none",
                         }}
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <Item>참가하기</Item>
                     </a>
@@ -146,7 +148,7 @@ function Participation() {
             sx={{
                 backgroundColor: "#000000",
                 backgroundSize: "contain",
-                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.jpg"})`,
                 padding: matches ? "5vw" : "",
                 width: "100vw",
             }}

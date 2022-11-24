@@ -22,8 +22,12 @@ function Introductions() {
     const [opacity, setOpacity] = useState(1);
 
     const onClick = (e) => {
-        setDetail((cur) => !cur);
-        setSelected(e.target.alt);
+        if (selected !== e.target.alt) {
+            setDetail((cur) => !cur);
+            setSelected(e.target.alt);
+        } else {
+            setSelected("");
+        }
     };
 
     const onSwiperClick = () => {
@@ -97,7 +101,7 @@ function Introductions() {
                               >
                                   <Box>
                                       <img
-                                          src={`/assets/images/main/profiles/main/${profile.name}.png`}
+                                          src={`/assets/images/main/profiles/main/${profile.name}.jpg`}
                                           alt={profile.name}
                                           style={{
                                               width: "50vw",

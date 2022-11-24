@@ -94,7 +94,7 @@ function Faqs() {
         <Box
             sx={{
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.jpg"})`,
                 paddingTop: matches ? "3vw" : "10vw",
                 paddingBottom: matches ? "3vw" : "10vw",
             }}
@@ -102,6 +102,7 @@ function Faqs() {
             <img
                 src="/assets/images/sub/faq/faq_title.png"
                 style={{ width: matches ? "15%" : "40vw" }}
+                alt="faq"
             />
 
             <Box
@@ -192,6 +193,7 @@ function Faqs() {
                             cursor: "pointer",
                         }}
                         target="_blank"
+                        rel="noreferrer"
                     >
                         이곳에 없는 문의사항이 있다면?{" "}
                         <span

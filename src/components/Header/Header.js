@@ -3,14 +3,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import {
-    Box,
-    AppBar,
-    Toolbar,
-    IconButton,
-    Grid,
-    Typography,
-} from "@mui/material";
+import { Box, AppBar, Toolbar, IconButton, Grid } from "@mui/material";
 
 import NavBar from "../NavBar/NavBar";
 
@@ -19,10 +12,16 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import styled from "styled-components";
+
+const HeaderContainer = styled.div`
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/images/common/brick_bg2.jpg");
+`;
 
 function Header() {
     const theme = useTheme();
@@ -90,19 +89,18 @@ function Header() {
     return (
         <div>
             {matches ? (
-                <div>
-                    <Box
-                        sx={{
-                            textAlign: "center",
-                            backgroundImage: `url(${"/assets/images/common/brick_bg2.png"})`,
-                        }}
-                    >
-                        <Link to={`/`}>
-                            <img src="/assets/images/common/logo/logo2.png"></img>
-                        </Link>
-                    </Box>
+                <HeaderContainer>
+                    <Link to={`/`}>
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcSet="/assets/images/common/logo/logo2.webp"
+                            />
+                            <img src="/assets/images/common/logo/logo2.png" />
+                        </picture>
+                    </Link>
                     <NavBar items={items} />
-                </div>
+                </HeaderContainer>
             ) : (
                 <Box>
                     <AppBar
@@ -121,7 +119,6 @@ function Header() {
                                             mr: 2,
                                             height: "100%",
                                             width: "60px",
-                                            // paddingTop: "4vw",
                                         }}
                                         onClick={toggleDrawer(anchor, true)}
                                     >
@@ -154,28 +151,20 @@ function Header() {
                                             to={`/`}
                                             style={{ textDecoration: "none" }}
                                         >
-                                            <img
-                                                style={{
-                                                    width: "40vw",
-                                                    padding: 10,
-                                                    paddingTop: 15,
-                                                }}
-                                                src="/assets/images/common/logo/logo_small2.png"
-                                            ></img>
-                                            {/* <Typography
-                                                component="div"
-                                                sx={{
-                                                    color: "#ffffff",
-                                                    fontFamily: "NIXGONM-Vb",
-                                                    // fontWeight: "bold",
-                                                    fontSize: "1.2rem",
-                                                    padding: "3vw",
-                                                    textAlign: "center",
-                                                    lineHeight: 1.2,
-                                                }}
-                                            >
-                                                CHEER ENGLISH
-                                            </Typography> */}
+                                            <picture>
+                                                <source
+                                                    type="image/webp"
+                                                    srcSet="/assets/images/common/logo/logo_small2.webp"
+                                                />
+                                                <img
+                                                    style={{
+                                                        width: "40vw",
+                                                        padding: 10,
+                                                        paddingTop: 15,
+                                                    }}
+                                                    src="/assets/images/common/logo/logo_small2.png"
+                                                />
+                                            </picture>
                                         </Link>
                                     </Box>
                                 </Grid>

@@ -1,5 +1,4 @@
-import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import AboutNvoim from "../../components/AboutNvoim/AboutNvoim";
@@ -16,6 +15,7 @@ function WhyCheerEng() {
                     width: matches ? "38vw" : "90vw",
                     padding: matches ? "" : "3vw",
                 }}
+                alt="whycheereng"
             ></img>
         );
     };
@@ -93,6 +93,7 @@ function WhyCheerEng() {
                         <img
                             src="/assets/images/sub/whycheereng/whycheereng_detail.png"
                             style={{ width: matches ? "25vw" : "60vw" }}
+                            alt="whycheereng"
                         ></img>
                     </Box>
                 </Stack>
@@ -105,13 +106,14 @@ function WhyCheerEng() {
             sx={{
                 textAlign: "center",
                 backgroundColor: "#000000",
-                backgroundImage: `url(${"/assets/images/common/brick_bg.png"})`,
+                backgroundImage: `url(${"/assets/images/common/brick_bg.jpg"})`,
                 padding: matches ? "3.5vw" : "6vw",
             }}
         >
             <img
                 style={{ width: matches ? "30vw" : "70vw" }}
                 src="/assets/images/sub/whycheereng/whycheerengTitle.png"
+                alt="title"
             ></img>
             <Divider
                 variant="middle"
